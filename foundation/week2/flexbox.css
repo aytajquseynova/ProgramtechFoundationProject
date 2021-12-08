@@ -1,0 +1,18 @@
+.news {
+  border: 1px solid green;
+}
+.news-container {
+  border: 1px solid blueviolet;
+  width: 1200px;
+}
+.news-row {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+.news-column {
+  border: 1px solid red;
+
+  width: 350;
+  background: chocolate;
+}
