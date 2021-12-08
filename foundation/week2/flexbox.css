@@ -4,15 +4,18 @@
 .news-container {
   border: 1px solid blueviolet;
   width: 1200px;
+  margin: 0px auto;
 }
 .news-row {
   border: 1px solid blue;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .news-column {
   border: 1px solid red;
 
   width: 350;
   background: chocolate;
+  height: 180px;
 }
