@@ -1,0 +1,19 @@
+p {
+  background-color: aquamarine;
+  display: inline;
+}
+span {
+  background-color: blueviolet;
+  display: block;
+  visibility: hidden; /*gizler*/
+}
+div {
+  background-color: brown;
+  width: 300px;
+  border: 2px solid green;
+  display: inline-block;
+}
+/* display:none- direkt silir
+display:inline -blok elementlerini inline element kimi gosterir
+display:block - inline seviyyedeki elementleri blok element kimi gosterir
+visibility:hidden -gizleyir*/
