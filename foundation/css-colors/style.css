@@ -1,0 +1,24 @@
+.qutu {
+  background-color: #29916643;
+  color: wheat;
+}
+body {
+  background-image: url(https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2021/07/06085917/wesley-hilario-3ctv8GJ5K0U-unsplash-min-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*hex kodlari ile rengleri mueyyen etmek mumkundur
+16 deyer alir 0-f arasi--
+0123456789abcdef
+ 6 basamak olur
+red green blue rrggbb
+8 basamak olanda saydamligi mueyyen edir */
+/*rgb ile mueyyen etmek olur
+burda 0-255 arasi deyer alir
+rgb(57,89,1)
+rgb i saydamlasdirmak istersek
+rgba(0, 145, 54,0) a 0-1 arasi deyer alir*/
+/*hsl ile (hue saturation lightness)
+hue 0-360 arasi deyer alir
+saturation(gri ton) lightness(parlaqliq) 0-100% arasi deyer alir
+*/
