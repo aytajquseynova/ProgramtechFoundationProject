@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.qutu {
+  background-color: greenyellow;
+  width: 400px;
+  height: 500px;
+  padding-left: 70px;
+  padding-top: 75px;
+}
+/* toplam
+genislik 470px
+hundurluk 575 px*/
+/*box sizing e border-box ozelliyi verende genislik 400px hundurluk 500px*/
