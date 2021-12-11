@@ -1,0 +1,35 @@
+div.qutular {
+  background-color: palevioletred;
+  width: 500px;
+  margin: auto; /* ortaya alir*/
+  height: 700px;
+  padding: 20px;
+  margin-top: 20px;
+}
+div#qutu1 {
+  background-color: darkgoldenrod;
+  border: 2px solid black;
+  width: 100px;
+  height: 150px;
+  margin-left: 30px; /*qutunun sol terefine bosluq qoyuruq*/
+}
+div#qutu2 {
+  background-color: darkmagenta;
+  border: 3px dashed red;
+  width: 100px;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px; /*qutunun yuxarisina bosluq verilir*/
+  margin-bottom: 40px; /*qutunun alt terefine bosluq veririk*/
+  margin-right: 400px; /*qutunun sagina bosluq veririk*/
+}
+div#qutu3 {
+  background-color: darkslategrey;
+  border: paleturquoise 4px dotted;
+  width: 100px;
+  height: 150px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
