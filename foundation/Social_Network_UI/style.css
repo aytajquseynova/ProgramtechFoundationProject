@@ -1,0 +1,89 @@
+body {
+  background-image: url(https://image.freepik.com/free-photo/portrait-excited-african-girl-pink-casual-clothes-using-laptop-pc-computer-isolated-blue-turquoise-wall-background-studio-people-sincere-emotions-lifestyle-concept-mock-up-copy-space_365776-5835.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-tools {
+  width: 200px;
+}
+.container-tools-heading {
+  margin: 0px auto;
+}
+.container-tools-view {
+  border: 1px solid cadetblue;
+  background-color: rgb(17, 66, 68);
+  width: 600px;
+  height: 300px;
+  margin: 0 px auto;
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+}
+.img {
+  margin: auto;
+}
+.info {
+  margin: auto;
+  border: 1px solid white;
+  display: flex;
+  width: 600px;
+}
+.info-heading-author {
+}
+.info-heading {
+  margin: 0px auto;
+  padding: 3px;
+}
+.info-paragraf {
+  padding-bottom: 2px;
+}
+.info-view {
+  display: flex;
+  justify-content: flex-end;
+  width: 450px;
+  padding: 18px;
+}
+
+.form {
+  margin: 0px auto;
+  border: 1px;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.email {
+  border: solid 1px wheat;
+  background-color: rgb(17, 66, 68);
+}
+
+.signup {
+  border: 1px solid wheat;
+  background-color: rgb(17, 66, 68);
+}
+.login {
+  border: 1px solid wheat;
+  background-color: rgb(17, 66, 68);
+}
+.socialmedia {
+  border: 1px;
+  color: black;
+}
+.mediaicons {
+  display: flex;
+  justify-content: flex-start;
+}
+.about {
+}
+.footer {
+  text-decoration: none;
+}
+p {
+  color: aliceblue;
+}
+span {
+  color: aliceblue;
+}
+address {
+  color: aliceblue;
+}
