@@ -28,8 +28,7 @@ body {
   display: flex;
   width: 600px;
 }
-.info-heading-author {
-}
+
 .info-heading {
   margin: 0px auto;
   padding: 3px;
@@ -73,8 +72,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.about {
-}
+
 .footer {
   text-decoration: none;
 }
