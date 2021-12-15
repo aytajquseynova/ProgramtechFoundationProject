@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+}
+
+#main {
+  height: 500px;
+  background-image: url(../images/header_bg.jpg);
+}
+.main-container {
+  width: 1200px;
+  height: inherit;
+  margin: 0px auto;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.resume {
+  display: flex;
+  padding-top: 20px;
+}
+button {
+  color: red;
+}
+span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding-left: 8px;
+}
+.introduce-name h2 {
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1f1f29;
+  line-height: 0.69em;
+  letter-spacing: 0.14em;
+}
+.introduce-icon {
+  background-color: #ff4d57;
+}
+.introduce-job {
+  display: flex;
+  padding-left: 30px;
+}
+.introduce-icon {
+  width: 250px;
+  padding-left: 100px;
+  height: 3px;
+}
+.job-name span {
+  padding-left: 8px;
+  letter-spacing: 0.14em;
+  line-height: 0.69em;
+}
