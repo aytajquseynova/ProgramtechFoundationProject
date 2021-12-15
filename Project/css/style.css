@@ -1,15 +1,37 @@
 body {
   margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
-
+/*main start*/
+.container {
+  width: 1220px;
+  height: 80vh;
+  margin: 61px auto;
+  position: relative;
+}
 #main {
   height: 500px;
-  background-image: url(../images/header_bg.jpg);
+  width: 1220px;
+}
+.bg-img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+  right: 0;
+  top: 0;
+  background-size: contain;
+  z-index: -5;
+  background-image: url("../images/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-container {
   width: 1200px;
   height: inherit;
-  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding-left: 50px;
   padding-top: 20px;
 }
@@ -21,9 +43,12 @@ button {
   color: red;
 }
 span {
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   padding-left: 8px;
+}
+.introduce {
+  margin-bottom: 200px;
 }
 .introduce-name h2 {
   font-size: 70px;
@@ -32,6 +57,12 @@ span {
   color: #1f1f29;
   line-height: 0.69em;
   letter-spacing: 0.14em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.introduce-name h2:nth-child(2) {
+  margin: 13px 0;
 }
 .introduce-icon {
   background-color: #ff4d57;
@@ -39,14 +70,46 @@ span {
 .introduce-job {
   display: flex;
   padding-left: 30px;
+  align-items: center;
+  margin-top: 4px;
 }
 .introduce-icon {
   width: 250px;
-  padding-left: 100px;
+  margin-left: 93px;
   height: 3px;
+  margin-right: 25px;
 }
 .job-name span {
-  padding-left: 8px;
   letter-spacing: 0.14em;
   line-height: 0.69em;
 }
+/*main finish*/
+/*haqqimda section baslayir*/
+.section2 {
+  margin-left: 8.33333333%;
+}
+hr {
+  width: 65px;
+  margin: 0 0 0;
+  border-width: 4px;
+
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid #ff4d57;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 30px 0 0px;
+  letter-spacing: 0.75px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+/*haqqimda section bitis*/
+/*skills  section start*/
+
