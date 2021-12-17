@@ -1,5 +1,7 @@
+
+
 body {
-  margin: 0px;
+
   font-family: "Poppins", sans-serif;
 }
 /*main start*/
@@ -22,7 +24,7 @@ body {
   top: 0;
   background-size: contain;
   z-index: -5;
-  background-image: url("../images/header_bg.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -109,7 +111,66 @@ p {
 }
 h2 {
   font-family: "Poppins", sans-serif;
-}
-/*haqqimda section bitis*/
-/*skills  section start*/
+      font-size: 19px;
+      line-height: 19px;
+      font-weight: 400;
+      margin-bottom: 13px;
+      letter-spacing: 1.2px;
+      }
 
+/*portfolio baslayir*/
+*{box-sizing: border-box;}
+.portfolio{
+
+ margin-left: 8.33333333%;
+}
+
+.portfolio-heading h2{
+    font-family: "Poppins",
+    sans-serif;
+font-size: 19px;
+line-height: 19px;
+font-weight: 600;
+margin-bottom: 13px;
+letter-spacing: 1.5px;
+color:#1f1f29;
+}
+
+   hr{ width: 65px;
+
+    border-width: 4px;
+    border-color: #ff4d57;
+
+    }
+    .menu{
+      display: flex;
+    margin-top: 20px; }
+    .menu span{
+         font-family: "Poppins",
+         sans-serif;
+         font-size: 13px;
+         line-height: 15px;
+         font-weight: 700;
+         margin-bottom: 13px;
+         letter-spacing: 1.5px;
+         color:#1f1f29;
+         text-transform: uppercase;
+         text-decoration: none;
+         }
+    .img-video{
+      
+      display:flex;
+    
+
+
+    }
+    .img-videos{
+      display: flex;
+    }
+    .img-frame{
+      display: flex;
+      flex-direction: column;
+      width:1200px;
+    }
+    .img-items img{ margin-left: 10px;
+    width:250px}
