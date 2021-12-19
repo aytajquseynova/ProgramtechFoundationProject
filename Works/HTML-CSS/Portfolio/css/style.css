@@ -22,15 +22,6 @@
   transform: translate(-50%, -50%);
 }
 
-.sidebar {
-  /* height: 100%; */
-  position: fixed;
-  right: 0px;
-  top: 50%;
-  z-index: 999;
-  /* background: red; */
-  width: 55px;
-  box-sizing: border-box;
 
 }
 
