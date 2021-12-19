@@ -1,28 +1,14 @@
-/* Sidebar Section Start */
-
-.menu-item ul li {
-  width: 14px;
-  height: 14px;
-  margin-left: 30px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .menu-item ul li::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  content: "";
+
   width: 7px;
   height: 7px;
   margin-left: 10px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
   transform: translate(-50%, -50%);
-}
-
-
 }
 
 .app {
@@ -84,23 +70,9 @@
   padding-top: 20px;
 }
 
-.resume {
-  display: flex;
-  padding-top: 20px;
-}
-
-button {
-  color: black;
-}
-
-span {
-  font-family: sans-serif;
-  font-weight: 300;
-  padding-left: 8px;
-}
-
 .introduce {
   margin-bottom: 200px;
+  margin-top: 240px;
 }
 
 .introduce-name h2 {
@@ -187,17 +159,10 @@ h2 {
   margin-left: 8.33333333%;
   padding-top: 25px;
 } */
-
-.portfolio-heading h2 {
-  font-family: "Poppins",
-    sans-serif;
-  font-size: 19px;
-  line-height: 19px;
-  font-weight: 600;
-  margin-bottom: 13px;
-  letter-spacing: 1.5px;
-  color: #1f1f29;
+.portfolio {
+  margin-top: 25px;
 }
+
 
 hr {
   width: 65px;
@@ -208,6 +173,8 @@ hr {
 .menu {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 24px;
+  gap: 22px;
 }
 
 .menu span {
@@ -233,24 +200,29 @@ hr {
 
 .img-video {
   display: grid;
-  gap: 20px;
+  gap: 10px;
   box-sizing: border-box;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .img-items img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 /*rey hisse acilir*/
 #references {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 25px;
 }
 
 .comment {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
+  margin-top: 25px;
 }
 
 .commenter-info {
@@ -261,17 +233,24 @@ hr {
 
 .comment-frame {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 
 q {
   font-style: italic;
 }
 
-.commenteer-name-job {
+/*
+.commenter-details {
+  display: grid;
+}*/
+.commenter-details {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
 }
+
+
 
 .commenter-info img {
   width: 50px;
@@ -279,6 +258,7 @@ q {
   border-radius: 50%;
   margin: 0px;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 /*connect sectionu baslayir
@@ -301,4 +281,3 @@ q {
 
 /*connect section baglandi*/
 /*form section basladi*/
-.form {}
