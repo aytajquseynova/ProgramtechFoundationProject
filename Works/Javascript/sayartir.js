@@ -1,6 +1,6 @@
-let a=0
+let a=0;
 function repeat(){
-    a++
+    a++;
     console.log(a)
     if(a<3000){
         repeat()
