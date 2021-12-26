@@ -62,3 +62,10 @@ Bəzən kodlarımızda çalışmasını istəmədiyimiz hissələr ola bilir.con
 4. Hazır funksiyalar
    write(), alert(), prompt() kimi hazır funksiyalarla tanış olduq, hansı ki onlar bizim kod yazmağımızı asanlaşdırmağa kömək edir.
    string( ) - string veriyi string növünə, number( ) isə number növünə çevirir
+
+... 3) Functional scope, global scope, block scope, local scope anlayışları
+Functional scope- yazılan funksiyanın içərisində keçərlidir.
+Block scope- yazılan bəzəkli { } mötərizələr içərisində keçərlidir.
+let və const block scope tabanlı olub ona ən yaxın bəzəkli mötərizələr arasında əlçatandır
+Local Scope- variable bir funksiya içərisindədirsə bunun yerləşdiyi əraziyə Local Scope adı verilir. Tanımlanan variable də local variabledir.
+Global scope- Proqram içərisində funksiyaların xaricində tanımlanmış və hər yerdən əlçatan olan scope tipidir. Global scope`da tanınmlanmış bir variable-ə qovluq içərisində hər yerdən erişilebilir.Global variable deyilir bunlara. Amma global variable istifadəsi çox da tövsiyə olunmur. Çünki local variables iş bitdikdə silinsə də global variables varlığını davam etdirir və bu da gələcəkdə memory problemlərinə yol aça bilir.
