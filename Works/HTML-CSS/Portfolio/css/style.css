@@ -354,7 +354,10 @@ q {
   display: flex;
   margin-top: 100px;
 
+}
 
+.connect-title {
+  padding: 2px;
 }
 
 .connect-title {
@@ -366,7 +369,6 @@ q {
   margin-left: 45px;
 }
 
-
 .iconlar {
   display: flex;
   gap: 15px;
@@ -377,42 +379,39 @@ q {
 
 }
 
-
-
 .iconlar li:hover {
   opacity: 0.7;
-
 }
 
 .fa-github {
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
   background: #2c4762;
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 12px;
+  padding: 7px;
 
 }
 
 .fa-instagram {
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
   background: #125688;
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 12px;
+  padding: 7px;
 }
 
 .fa-linkedin {
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
   background: #007bb5;
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 12px;
+  padding: 7px;
 }
 
 /*connect section baglandi*/
