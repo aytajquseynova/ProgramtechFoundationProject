@@ -241,10 +241,12 @@ hr {
 /* .img-video {
   display: flex;
 }
-
 .img-videos {
   display: flex;
 } */
+.img-frame {
+  position: relative;
+}
 
 .img-video {
   display: grid;
@@ -260,11 +262,20 @@ hr {
 }
 
 
+.img-items:hover {
+  filter: blur(3px);
+  transition: all .3 s ease;
+  cursor: pointer;
+
+}
+
 /*rey hisse acilir*/
-#references {
-  padding-top: 90px;
-  padding-bottom: 40px;
-  margin-top: 25px;
+#reference {
+  margin-top: 99px;
+}
+
+.heading {
+  margin-top: 99px;
 }
 
 .comment {
@@ -346,14 +357,62 @@ q {
 
 }
 
+.connect-title {
+  margin-bottom: 50px;
+}
+
 .icons {
   display: flex;
   margin-left: 45px;
 }
 
+
 .iconlar {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 22px;
+
+
+}
+
+
+
+.iconlar li:hover {
+  opacity: 0.7;
+
+}
+
+.fa-github {
+  width: 45px;
+  height: 45px;
+  background: #2c4762;
+  color: white;
+  border-radius: 50% 50%;
+  text-align: center;
+  padding: 12px;
+
+}
+
+.fa-instagram {
+  width: 45px;
+  height: 45px;
+  background: #125688;
+  color: white;
+  border-radius: 50% 50%;
+  text-align: center;
+  padding: 12px;
+}
+
+.fa-linkedin {
+  width: 45px;
+  height: 45px;
+  background: #007bb5;
+  color: white;
+  border-radius: 50% 50%;
+  text-align: center;
+  padding: 12px;
 }
 
 /*connect section baglandi*/
