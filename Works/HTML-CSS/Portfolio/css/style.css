@@ -303,10 +303,14 @@ hr {
 
 q {
   font-style: italic;
-  font-size: 25px;
-  font-family: sans-serif;
+
   letter-spacing: 0.75px;
-  line-height: 24px;
+  font-family: "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 20px;
+  line-height: 1.42857143;
 }
 
 
@@ -325,8 +329,8 @@ q {
   font-size: 24px;
   color: black;
   font-family: sans-serif;
-  font-weight: 600;
-
+  font-weight: 700;
+  line-height: 20px;
 
 }
 
@@ -364,6 +368,17 @@ q {
   margin-bottom: 50px;
 }
 
+.heading-connect h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 19px;
+  font-family: 'Poppins',
+    sans-serif;
+  letter-spacing: 1.2px;
+
+}
+
 .icons {
   display: flex;
   margin-left: 45px;
@@ -390,7 +405,7 @@ q {
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 7px;
+  padding: 8px;
 
 }
 
@@ -401,7 +416,7 @@ q {
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 7px;
+  padding: 8px;
 }
 
 .fa-linkedin {
@@ -411,7 +426,7 @@ q {
   color: white;
   border-radius: 50% 50%;
   text-align: center;
-  padding: 7px;
+  padding: 8px;
 }
 
 /*connect section baglandi*/

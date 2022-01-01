@@ -1,0 +1,1 @@
+alert('bu bir uyaridir')
