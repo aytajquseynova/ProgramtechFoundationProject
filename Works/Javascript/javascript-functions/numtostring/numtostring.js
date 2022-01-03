@@ -1,5 +1,5 @@
 let num = 15;
 function numtoString(){
-num.toString;
-console.log(num)}
+let text = num.toString(16);
+console.log(text)}
 numtoString()
