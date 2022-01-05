@@ -1,8 +1,4 @@
-function evenOrOdd(num) { //for string length take string
-  if (num % 2 == 0) {//and replace numm with string.length here
-    return "even";
-  } else {
-    return "odd";
-  }
+function even(a){
+    return a%2==0;
 }
-document.write(evenOrOdd(75))
+document.write(even(66))
