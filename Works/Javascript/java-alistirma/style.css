@@ -1,0 +1,21 @@
+
+.buttons{
+    display: flex;
+}
+.button{
+    border:1px solid green;
+    width:100px;
+    height:55px;
+    margin:20px;
+
+}
+.box{
+    border:1px solid blue;
+    background-color: aqua;
+    width:100px;
+    height:55px;
+    
+    position:absolute;
+    transition:    all.5s ease;
+    left:0px;
+}
