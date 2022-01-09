@@ -1,8 +1,8 @@
  var panelDiv=document.querySelector("#panel");
-            var btn=document.querySelector("#elaveet");
+         
     
             
-            btn.onclick=function(){
+            function yarat(){
                 var etiket=document.createElement("div"); 
               
                 etiket.classList="box"; 
