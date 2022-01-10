@@ -1,0 +1,25 @@
+ul {
+    padding: 0px;
+    margin: 40px;
+    list-style: none
+}
+
+li {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-bottom: none;
+    transition: all .5s ease;
+}
+
+li:last-child {
+    border-bottom: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+}
+
+li:first-child {
+    border-radius: 10px 10px 0px 0px;
+}
+
+li:hover {
+    background: lightgray
+}
