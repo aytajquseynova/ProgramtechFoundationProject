@@ -11,7 +11,7 @@ function getUserData(event) {
                 <td>${soyad}</td>
                 <td>${email}</td>
                 <td>${date}</td>
-                <td onclick="this.parentNode.parentNode.style.display = 'none';"><a href=#' ">Sil</a></td></tr>`
+                <td onclick="this.parentNode.parentNode.style.display = 'none';"><a href=#' ">Sil</a></td></tr>`// trnin icindeki th`in icindeki td
 
 
 }
