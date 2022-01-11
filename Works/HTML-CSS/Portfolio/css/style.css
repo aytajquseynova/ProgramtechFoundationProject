@@ -78,13 +78,14 @@ html {
   display: flex;
   list-style-type: none;
   padding-top: 42px;
+  margin-left:210px;
 }
 
 .navbar a {
   text-decoration: none;
   color: black;
 
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   color: #1f1f29;
@@ -150,7 +151,7 @@ html {
   text-transform: uppercase;
   color: #1f1f29;
   letter-spacing: 0.5em;
-  font-size: 18 px;
+  font-size: 14 px;
   font-family: sans-serif;
   padding-left: 30px;
 
@@ -172,18 +173,21 @@ hr {
   border: 0;
   border-top: 1px solid black;
 }
-
+/*
 .section-about {
   margin-bottom: 20px;
-}
+}*/
 
 .section-about p {
-  font-family: "Poppins", sans-serif;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 30px 0 0px;
-  letter-spacing: 0.75px;
+ 
+      font-family: 'Poppins',
+      sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 30px 0 0px;
+      letter-spacing: 0.75px;
+      color: #424250;
 }
 
 h2 {
@@ -207,7 +211,8 @@ h2 {
   padding-top: 25px;
 } */
 .portfolio {
-  margin-top: 50px;
+  padding-top: 40px;
+  
 }
 
 
@@ -326,7 +331,7 @@ hr {
 }
 
 .rey {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .commenter-info {
@@ -342,15 +347,17 @@ hr {
 }
 
 q {
-  font-style: italic;
-
-  letter-spacing: 0.75px;
-  font-family: "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 20px;
-  line-height: 1.42857143;
+     font-size: 14px;
+    font-style: italic;
+    word-break: break-all;
+        font-family: 'Poppins',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 30px 0 0px;
+        letter-spacing: 0.75px;
+        color: #424250;
 }
 
 
@@ -362,11 +369,11 @@ q {
   display: flex;
   flex-direction: column;
   margin-bottom: -1px;
-  margin-left: 12px;
+  margin-left: 1px;
 }
 
 .commenter-details p {
-  font-size: 24px;
+  font-size: 14px;
   color: black;
   font-family: sans-serif;
   font-weight: 700;
@@ -375,9 +382,9 @@ q {
 }
 
 .commenter-details h3 {
-  font-size: 20px;
+  font-size: 12px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   font-family: sans-serif;
   line-height: 2;
   color: #333;
