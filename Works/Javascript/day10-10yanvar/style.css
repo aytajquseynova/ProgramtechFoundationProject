@@ -1,0 +1,38 @@
+.registration-form {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px 20px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.registration-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+}
+
+.user-data {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="registration-form">
+        <form action="">
+            <div class="form-element">
+                <input type="text" name='ad' placeholder="Adınız">
+            </div>
+            <div class="form-element">
+                <input type="text" name='soyad' placeholder="Soyadınız">
+            </div>
+            <div class="form-element">
+                <input type="email" name='email' placeholder="Email Adresiniz">
+            </div>
+            <div class="form-element">
+                <input type="date" name='date' placeholder="Dogum tarixiniz">
+            </div>
+            <div class="form-element">
+                <input type="button" value='Qeydiyyatdan keç' onclick="getUserData(event)">
+            </div>
+        </form>
+    </div>
+
+    <div class="user-data">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th>Actions</th>
+            </tr>
+
+
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
