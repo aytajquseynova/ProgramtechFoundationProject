@@ -237,7 +237,7 @@ hr {
 .menu span {
   font-family: "Poppins",
     sans-serif;
-  font-size: 22px;
+  font-size: 13px;
   line-height: 15px;
   font-weight: 700;
   margin-bottom: 13px;
@@ -301,6 +301,10 @@ hr {
 }
 
 .test .fa-image {
+  font-size: 35px;
+  color: #fff;
+}
+.test .fa-video-camera{
   font-size: 35px;
   color: #fff;
 }
@@ -442,7 +446,9 @@ q {
   justify-content: center;
   border-radius: 50%;
 }
-
+.icons{
+  margin-left:35px;
+}
 /* .icons {
   display: flex;
   margin-left: 45px;
