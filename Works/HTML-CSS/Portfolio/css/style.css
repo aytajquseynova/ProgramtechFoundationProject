@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+/*
+body{
+  font-family: sans-serif ;
+}*/
 
 .menu-item ul li::after {
   position: absolute;
@@ -464,7 +468,12 @@ hr {
 
 .test:hover {
   transition: .6s ease all;
-  opacity: 0.85;}
+  opacity: 0.85;
+  -webkit-transition: .6s ease all;
+  -moz-transition: .6s ease all;
+  -ms-transition: .6s ease all;
+  -o-transition: .6s ease all;
+}
   
 
 .test .fa-image {
@@ -550,7 +559,7 @@ hr {
       font-family: sans-serif;
       font-weight: 700;
       line-height: 20px;
-          text-transform: none;
+          
     }
 
     .reyci-isi p {
@@ -570,7 +579,10 @@ hr {
       margin: 0px;
       margin-right: 20px;
       object-fit: cover;
-      
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
 }
 
     /*connect sectionu baslayir
@@ -616,7 +628,11 @@ hr {
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-    }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
 
     .icons {
       margin-left: 35px;}
@@ -627,3 +643,69 @@ hr {
 
       /*connect section baglandi*/
       /*form section basladi*/
+      .form{
+        padding:15px;
+        margin-left:76%;
+        width:100%;
+        box-sizing: border-box;
+      }
+      input{
+        padding:15px;
+      }
+      .form p{
+        margin-top: 0px;
+        font-weight: 600;
+        color: #424250;
+        font-family: 'Poppins',
+        sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 30px 0 0px;
+        letter-spacing: 0.75px;
+      }
+.form-box input
+      {
+
+      
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+    color: #000;
+    padding: 0.5em 1em 0.5em 0;
+    border-bottom: 2px solid #adaefc;
+    line-height: 26px;
+    min-height: 62px;
+    }
+    .form-box textarea{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 100%;
+      -webkit-appearance: none;
+      background: #fff;
+      color: #000;
+      padding: 0.5em 1em 0.5em 0;
+      border-bottom: 2px solid #adaefc;
+      line-height: 26px;
+      min-height: 62px;
+    }
+    /*
+    .submit  {
+      cursor: pointer;
+      background: #fff;
+      color: #1f1f29;
+      border-bottom: 4px solid #ff4d57;
+      padding: 11px 0px;
+      font-family: 'Poppins',
+      sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 15px;
+      text-transform: uppercase;
+      float: right !important;
+          
+    }*/
