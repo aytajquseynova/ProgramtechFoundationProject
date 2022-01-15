@@ -12,6 +12,10 @@ html {
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .app {
@@ -207,8 +211,25 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.personal-skills{
+    padding-right: 30px;
+    margin-left: 8.33333333%;
+    box-sizing: border-box;
+    
+padding-bottom:40px;
+    padding-top: 40px;
+    
+}
+.skill-icons{
+  display:flex;
+  
+  margin-top:50px;
+  font-size:60px;
+justify-content: space-between;
+}
 
-#tehsilvetecrube {
+
+  #tehsilvetecrube {
   padding-right: 30px;
   margin-left: 8.33333333%;
   box-sizing: border-box;
@@ -221,7 +242,6 @@ h2 {
 .work-items {
   border-left: 1px dashed #000;
   margin-bottom: 50px;
-  height: 100vh;
   margin-top: 50px;
   box-sizing: border-box;
 }
@@ -360,10 +380,13 @@ h3 {
 } */
 .portfolio {
   padding-top: 40px;
+  margin:0 auto;
 
 
 }
-
+.portfolio .heading{
+  margin-top:0px;
+}
 
 hr {
   width: 65px;
@@ -377,11 +400,11 @@ hr {
   margin-bottom: 27px;
   gap: 22px;
 }
-
-.portfolio-heading {
-  margin-bottom: 51px;
-  margin-top: 124px;
-}
+/*
+.portfolio-heading h2{
+  margin-top:40px;
+  
+}*/
 
 .menu span {
   font-family: "Poppins",
