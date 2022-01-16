@@ -36,9 +36,9 @@ body{
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  /* margin-left: 30px; */
+  /* margin-left: 30px; 
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 60px;*/
   background-color: white;
 }
 
@@ -180,8 +180,9 @@ hr {
   margin-bottom: 20px;
 }*/
 #about {
-  padding-right: 30px;
+ /* padding-right: 30px;*/
   margin-left: 8.33333333%;
+  margin-right:8.3%;
 }
 
 .section-about p {
@@ -216,10 +217,10 @@ h2 {
   font-weight: 700;
 }
 .personal-skills{
-    padding-right: 30px;
+    
     margin-left: 8.33333333%;
     box-sizing: border-box;
-    
+    margin-right:8.3%;
 padding-bottom:40px;
     padding-top: 40px;
     
@@ -238,7 +239,7 @@ justify-content: space-between;
   margin-left: 8.33333333%;
   box-sizing: border-box;
   display: flex;
-
+margin-right:8.3%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -367,8 +368,9 @@ h3 {
 }
 
 #portfolio {
-  padding-right: 30px;
+  /*padding-right: 30px;*/
   margin-left: 8.33333333%;
+  margin-right:8.3%;
 }
 
 * {
@@ -502,8 +504,10 @@ hr {
 
     #references {
       /*margin-top: 99px;*/
-      padding-right: 30px;
+      /*
+      padding-right: 30px;*/
       margin-left: 8.33333333%;
+      margin-right:8.3%;
     }
 
     .heading {
@@ -552,7 +556,7 @@ hr {
       margin-bottom: -1px;
       margin-left: 1px;
     }
-
+/*
     .reyci-adi p {
       font-size: 14px;
       color: black;
@@ -571,7 +575,7 @@ hr {
       color: #333;
       margin:0;
     }
-
+*/
     .commenter-info img {
       width: 70px;
       max-height: 70px;
@@ -589,9 +593,10 @@ hr {
 */
     #connect {
       display: flex;
-      margin-top: 100px;
-      padding-right: 30px;
+      margin-top: 100px;/*
+      padding-right: 30px;*/
       margin-left: 8.33333333%;
+      margin-right:8.3%;
 
     }
 
@@ -643,6 +648,29 @@ hr {
 
       /*connect section baglandi*/
       /*form section basladi*/
+    /*  #form{
+        position: relative;
+        background-image: url(/images/form-bg.jpg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        margin-left:8.3%;
+        
+      }*/
+      #form{
+         background-color: #e8eaed;
+         min-height: 410px;
+         padding: 45px 40px;
+             top: 60px;
+             right: 161px
+         
+      
+      }
+      .form-box{
+        background-color:white;
+    padding:45px 40px;
+        margin-left:620px;
+        margin-right:160px;
+      }
       .form{
         padding:15px;
         margin-left:76%;
@@ -692,6 +720,9 @@ hr {
       border-bottom: 2px solid #adaefc;
       line-height: 26px;
       min-height: 62px;
+    }
+    .e-mail{
+      border:none;
     }
     /*
     .submit  {
