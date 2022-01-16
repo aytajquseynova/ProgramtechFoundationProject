@@ -760,9 +760,10 @@ hr {
     }
     
     .submit  {
+      box-sizing:border-box;
       cursor: pointer;
       background: #fff;
-      color: #1f1f29;
+  
       font-family: 'Poppins',
       sans-serif;
       font-weight: 700;
@@ -770,13 +771,14 @@ hr {
       line-height: 15px;
       text-transform: uppercase;
        background-color: transparent;
-       border: 0px solid;
        height: 20px;
-       width: 160px;
+       width: 87px;
        border-bottom:4 px solid black;
        border-top:none;
        border-right:none;
        border-left:none;
-          
+          margin-left:63px;
+
+    
     }
     
