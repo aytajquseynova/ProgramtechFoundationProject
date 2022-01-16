@@ -758,7 +758,7 @@ hr {
     .e-mail{
       border:none;
     }
-    /*
+    
     .submit  {
       cursor: pointer;
       background: #fff;
@@ -769,16 +769,14 @@ hr {
       font-size: 18px;
       line-height: 15px;
       text-transform: uppercase;
-      float: right !important;
        background-color: transparent;
        border: 0px solid;
        height: 20px;
        width: 160px;
-       color: #CCC;
+       border-bottom:4 px solid black;
+       border-top:none;
+       border-right:none;
+       border-left:none;
           
     }
-    .submit hr{
-        float: right !important;
-        margin-top:16px;
-        margin-left:30px;
-    }*/
+    
