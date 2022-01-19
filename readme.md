@@ -1,5 +1,6 @@
 ## Aytac Hüseynova
 
+
 ### Haqqımda qısa məlumat
 - Tədrisə başladığım tarix : 29 Noyabr 2021
 - Tədrisi başa vurduğum tarix : 
