@@ -86,8 +86,7 @@ body{
   display: flex;
   list-style-type: none;
   padding-top: 42px;
-  margin-left: 210px;
-  margin-left: 210px;
+  justify-content: end;
 }
 
 .navbar a {
@@ -675,8 +674,8 @@ hr {
       .form-box{
         background-color:white;
     padding:45px 40px;
-        margin-left:620px;
-        margin-right:160px;
+        width: 365px;
+        margin: 0 0 0 auto;
       }
       .form{
         padding:15px;
