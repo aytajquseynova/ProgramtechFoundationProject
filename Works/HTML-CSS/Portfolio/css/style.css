@@ -684,7 +684,10 @@ q {
   padding: 45px 40px;
   width: 365px;
   margin: 0 0 0 auto;
+  box-shadow: 1px 0px 18px 4px rgb(91 94 250 / 20%);
+  -moz-box-shadow: 1px 0px 18px 4px rgba(91, 94, 250, 0.2);
 }
+
 
 .form {
   padding: 15px;
