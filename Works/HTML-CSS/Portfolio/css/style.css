@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .menu-item ul li::after {
   position: absolute;
   top: 50%;
@@ -16,10 +17,12 @@ html {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+
 .app {
   margin: 30px;
   box-sizing: border-box;
 }
+
 .blackframe-container {
   border: 25px solid black;
   /* width: calc(100% - 55px); */
@@ -34,6 +37,7 @@ html {
   padding-right: 60px;*/
   background-color: white;
 }
+
 .container {
   max-width: 1200px;
   /* height: 80vh; */
@@ -43,6 +47,7 @@ html {
   /* position: relative; */
   box-sizing: border-box;
 }
+
 .bg-img {
   position: absolute;
   z-index: 1;
@@ -56,6 +61,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .main-container {
   height: inherit;
   display: flex;
@@ -64,12 +70,14 @@ html {
   padding-left: 50px;
   padding-top: 20px;
 }
+
 .navbar ul {
   display: flex;
   list-style-type: none;
   padding-top: 42px;
   justify-content: end;
 }
+
 .navbar a {
   text-decoration: none;
   color: black;
@@ -80,13 +88,16 @@ html {
   line-height: 0.69em;
   letter-spacing: 0.20em;
 }
+
 .navbar ul li {
   margin: 10px;
 }
+
 .introduce {
   margin-bottom: 200px;
   margin-top: 240px;
 }
+
 .introduce-name h2 {
   font-size: 70px;
   font-weight: 800;
@@ -98,21 +109,26 @@ html {
   margin-block-end: 0;
   margin-bottom: 22px;
 }
+
 .introduce-name {
   margin-bottom: 26px;
 }
+
 .introduce-name h2:nth-child(2) {
   margin: 13px 0;
 }
+
 .introduce-icon {
   background-color: black;
 }
+
 .introduce-job {
   display: flex;
   padding-left: 30px;
   align-items: center;
   margin-top: 4px;
 }
+
 .introduce-job hr {
   width: 498px;
   border-width: 6px;
@@ -120,6 +136,7 @@ html {
   margin-left: 53px;
   margin-top: 5px;
 }
+
 .job-name span {
   font-weight: 800;
   text-transform: uppercase;
@@ -129,6 +146,7 @@ html {
   font-family: sans-serif;
   padding-left: 30px;
 }
+
 /*main finish*/
 /*haqqimda section baslayir*/
 hr {
@@ -141,13 +159,15 @@ hr {
   border: 0;
   border-top: 1px solid black;
 }
+
 #about {
   /* padding-right: 30px;*/
   margin-left: 8.33333333%;
   margin-right: 8.3%;
 }
+
 .section-about p {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -155,6 +175,7 @@ hr {
   letter-spacing: 0.75px;
   color: #424250;
 }
+
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 19px;
@@ -165,6 +186,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .personal-skills {
   margin-left: 8.33333333%;
   box-sizing: border-box;
@@ -173,12 +195,14 @@ h2 {
   padding-top: 40px;
 
 }
+
 .skill-icons {
   display: flex;
   margin-top: 50px;
   font-size: 70px;
-  
+
 }
+
 /*tehsilvetecrube sectionu baslayir*/
 #tehsilvetecrube {
   padding-right: 30px;
@@ -189,12 +213,14 @@ h2 {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .work-items {
   border-left: 1px dashed #000;
   margin-bottom: 50px;
   margin-top: 50px;
   box-sizing: border-box;
 }
+
 .work-line h3 {
   background-color: black;
   width: 200px;
@@ -202,10 +228,11 @@ h2 {
   line-height: 26px;
   letter-spacing: 0.75px;
   color: #fff;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0 13px;
   box-sizing: border-box;
 }
+
 h3 {
   box-sizing: border-box;
   margin: 0;
@@ -214,9 +241,10 @@ h3 {
   font-weight: 700;
   line-height: 24px;
   color: #424250;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-left: 23px;
 }
+
 .job-location {
   margin-top: 0px;
   font-weight: 500;
@@ -228,22 +256,25 @@ h3 {
   margin-left: 23px;
   letter-spacing: 0.75px;
 }
+
 .work-about {
   color: #424250;
   margin-left: 23px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   margin-top: 13px;
   letter-spacing: 0.75px;
 }
+
 .education-items {
   border-left: 1px dashed #000;
   margin-bottom: 50px;
   margin-top: 50px;
   box-sizing: border-box;
 }
+
 .education-line h3 {
   background-color: black;
   width: 200px;
@@ -251,10 +282,11 @@ h3 {
   line-height: 26px;
   letter-spacing: 0.75px;
   color: #fff;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0 13px;
   box-sizing: border-box;
 }
+
 h3 {
   box-sizing: border-box;
   margin: 0;
@@ -267,36 +299,42 @@ h3 {
     sans-serif;
   margin-left: 23px;
 }
+
 .education-location {
   margin-top: 0px;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
   color: #424250;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 24px;
   margin-left: 23px;
   letter-spacing: 0.75px;
 }
+
 .education-about {
   color: #424250;
   margin-left: 23px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   margin-top: 13px;
-  letter-spacing: 0.75px;}
-  /*tehsilvetecrube sectionu bitir*/
-  /*portfolio sectionu baslayir*/
+  letter-spacing: 0.75px;
+}
+
+/*tehsilvetecrube sectionu bitir*/
+/*portfolio sectionu baslayir*/
 #portfolio {
   /*padding-right: 30px;*/
   margin-left: 8.33333333%;
   margin-right: 8.3%;
 }
+
 * {
   box-sizing: border-box;
 }
+
 /* .portfolio {
   margin-left: 8.33333333%;
   padding-top: 25px;
@@ -305,26 +343,30 @@ h3 {
   padding-top: 40px;
   margin: 0 auto;
 }
+
 .portfolio .heading {
   margin-top: 0px;
 }
+
 hr {
   width: 65px;
   border-width: 4px;
   border-color: black;
 }
+
 .menu {
   display: flex;
   margin-top: 20px;
   margin-bottom: 27px;
   gap: 22px;
 }
+
 /*
 .portfolio-heading h2{
   margin-top:40px;
   }*/
 .menu span {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   line-height: 15px;
   font-weight: 700;
@@ -334,25 +376,30 @@ hr {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .img-frame {
   position: relative;
 }
+
 .img-video {
   display: grid;
   gap: 10px;
   box-sizing: border-box;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .img-items img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
+
 .img-items {
   position: relative;
   overflow: hidden;
   height: 180px;
 }
+
 .test {
   width: 100%;
   height: 100%;
@@ -370,7 +417,10 @@ hr {
   -moz-transition: .6s ease all;
   -ms-transition: .6s ease all;
   -o-transition: .6s ease all;
+  cursor: pointer;
+
 }
+
 .test:hover {
   transition: .6s ease all;
   opacity: 0.85;
@@ -379,14 +429,17 @@ hr {
   -ms-transition: .6s ease all;
   -o-transition: .6s ease all;
 }
+
 .test .fa-image {
   font-size: 35px;
   color: #fff;
 }
+
 .test .fa-video-camera {
   font-size: 35px;
   color: #fff;
 }
+
 .test p {
   margin-top: 20px;
   font-size: 15px;
@@ -395,10 +448,12 @@ hr {
   text-transform: uppercase;
   color: #fff;
 }
+
 /*rey hisse acilir*/
 #reference {
   margin-top: 99px;
 }
+
 #references {
   /*margin-top: 99px;*/
   /*
@@ -406,31 +461,37 @@ hr {
   margin-left: 8.33333333%;
   margin-right: 8.3%;
 }
+
 .heading {
   margin-top: 99px;
 }
+
 .comment {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   margin-top: 25px;
 }
+
 .rey {
   margin-bottom: 20px;
 }
+
 .commenter-info {
   display: flex;
   align-items: center;
 }
+
 .comment-frame {
   display: flex;
   flex-direction: row;
 }
+
 q {
   font-size: 14px;
   font-style: italic;
   word-break: break-all;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -438,30 +499,33 @@ q {
   letter-spacing: 0.75px;
   color: #424250;
 }
+
 .commenter-details {
   display: flex;
   flex-direction: column;
   margin-bottom: -1px;
   margin-left: 1px;
 }
-/*
-    .reyci-adi p {
-      font-size: 14px;
-      color: black;
-      font-family: sans-serif;
-      font-weight: 700;
-      line-height: 20px;
-    }
-     .reyci-isi p {
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 400;
-      font-family: sans-serif;
-      line-height: 2;
-      color: #333;
-      margin:0;
-    }
-*/
+
+
+.reyci-adi {
+  font-size: 14px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.reyci-isi {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: sans-serif;
+  line-height: 2;
+  color: #333;
+  margin: 0;
+}
+
 .commenter-info img {
   width: 70px;
   max-height: 70px;
@@ -474,6 +538,7 @@ q {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 /*connect sectionu baslayir
 */
 #connect {
@@ -484,24 +549,29 @@ q {
   margin-left: 8.33333333%;
   margin-right: 8.3%;
 }
+
 .connect-title {
   padding: 2px;
 }
+
 .connect-title {
   margin-bottom: 50px;
 }
+
 .heading-connect h2 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 24px;
   line-height: 19px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1.2px;
 }
+
 .iconlar {
   display: flex;
   gap: 10px;
 }
+
 .iconlar li {
   width: 22px;
   height: 22px;
@@ -517,12 +587,15 @@ q {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .icons {
   margin-left: 35px;
 }
+
 .icons {
   margin-left: 35px;
 }
+
 /*connect section baglandi*/
 /*form section basladi*/
 #form {
@@ -532,6 +605,7 @@ q {
   top: 60px;
   right: 161px
 }
+
 .form-box {
   background-color: white;
   padding: 45px 40px;
@@ -540,16 +614,19 @@ q {
   box-shadow: 1px 0px 18px 4px rgb(91 94 250 / 20%);
   -moz-box-shadow: 1px 0px 18px 4px rgba(91, 94, 250, 0.2);
 }
+
 .form {
   padding: 15px;
   margin-left: 76%;
   width: 100%;
   box-sizing: border-box;
 }
+
 input {
   padding: 15px;
   outline: none;
 }
+
 .form p {
   margin-top: 0px;
   font-weight: 600;
@@ -561,6 +638,7 @@ input {
   margin: 30px 0 0px;
   letter-spacing: 0.75px;
 }
+
 .form-box input#email {
   border-top: none;
   border-right: none;
@@ -575,6 +653,7 @@ input {
   min-height: 62px;
   outline: none;
 }
+
 .form-box input#name {
   border-top: none;
   border-right: none;
@@ -588,6 +667,7 @@ input {
   line-height: 26px;
   min-height: 62px;
 }
+
 .form-box textarea {
   border-top: none;
   border-right: none;
@@ -601,7 +681,9 @@ input {
   line-height: 26px;
   min-height: 62px;
   outline: none;
+  box-sizing: border-box;
 }
+
 .form-box input#subject {
   border-top: none;
   border-right: none;
@@ -615,21 +697,35 @@ input {
   line-height: 26px;
   min-height: 62px;
 }
+
 .e-mail {
   border: none;
 }
+
 .submit {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
 }
+
+.submit button:hover {
+  color: #a5a5bb;
+  transition: all ease .4s;
+  -webkit-transition: all ease .4s;
+  -moz-transition: all ease .4s;
+  -ms-transition: all ease .4s;
+  -o-transition: all ease .4s;
+}
+
 .submit button {
+  transition: all ease .4s;
+
   box-sizing: border-box;
   cursor: pointer;
   background: #fff;
   outline: none;
   padding: 12px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 15px;
