@@ -231,8 +231,8 @@ h2 {
   display: flex;
 
   margin-top: 50px;
-  font-size: 60px;
-  justify-content: space-between;
+  font-size: 70px;
+  gap:50px;
 }
 
 
