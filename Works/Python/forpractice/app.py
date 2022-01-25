@@ -8,7 +8,10 @@ telebeler=[
   
   {'ad':'Sebine',
    'soyad':'Huseynova',
-   'yas':'23'}
+   'yas':'23'},
+  {'ad':'Eli',
+   'soyad':'huseynov',
+   'yas':'17'}
 ]
 @app.route('/')
 def home():
