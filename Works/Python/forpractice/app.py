@@ -1,14 +1,18 @@
 from flask import Flask, render_template
 
 app=Flask(__name__)
-detallar=[
-  'Aytac',
-  'Huseynova',
-  '20 yas'
+telebeler=[
+  {'ad':'Aytac',
+   'soyad':'Huseynova',
+   'yas':'20'},
+  
+  {'ad':'Sebine',
+   'soyad':'Huseynova',
+   'yas':'23'}
 ]
 @app.route('/')
 def home():
-     return render_template('index.html', data=detallar)
+     return render_template('index.html', data=telebeler)
   
 @app.route("/about")
 def page():
