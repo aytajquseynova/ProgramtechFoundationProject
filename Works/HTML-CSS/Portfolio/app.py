@@ -34,7 +34,11 @@ skill=[
       Skill(
            random.randint(1, 500),
         "fab fa-python",
-    )
+    ),
+        Skill(
+           random.randint(1, 500),
+        "fab fa-github",
+    ),
          ]
 #skills sectionu bitir
 #portfolio sectionu baslayir
