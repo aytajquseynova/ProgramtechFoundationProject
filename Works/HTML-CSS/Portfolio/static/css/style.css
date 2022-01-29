@@ -586,6 +586,7 @@ q {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  cursor:pointer;
 }
 
 .icons {
