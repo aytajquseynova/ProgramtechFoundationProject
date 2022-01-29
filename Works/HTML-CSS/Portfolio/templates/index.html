@@ -57,7 +57,7 @@
                 <!--personal skills baslayir-->
                 <section id="skills"></section>
                 <div class="personal-skills">
-                    <h2>BACARIQLAR</h2>
+                    <h2>PERSONAL SKILLS</h2>
                     <hr>
                     <div class="skill-icons">
                         <i class="fab fa-html5" style="color: #F56040; margin-right:40px;"></i>
@@ -70,7 +70,7 @@
                 <section id="tehsilvetecrube">
                     <div class="work">
 
-                        <h2>İŞ TƏCRÜBƏSİ</h2>
+                        <h2>WORK EXPERIENCE</h2>
                         <hr>
                         <div class="work-items">
                             <div class="work-line">
@@ -83,7 +83,7 @@
                                 magni earum quo soluta sint
                                 velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
                                 dolorem.</p>
-                            <!--
+
                             <div class="work-line">
                                 <h3> MARCH'11 - DECEMBER'12 </h3>
                             </div>
@@ -105,14 +105,12 @@
                                 magni earum
                                 quo soluta sint
                                 velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>-->
+                                dolorem.</p>
                         </div>
                     </div>
-
-
                     <div class="education">
 
-                        <h2>TƏHSİL</h2>
+                        <h2>EDUCATION & DIPLOMAS</h2>
                         <hr>
                         <div class="education-items">
                             <div class="education-line">
@@ -126,7 +124,6 @@
                                 soluta sint
                                 velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
                                 dolorem.</p>
-                            <!--
                             <div class="education-line">
                                 <h3> JUNE, 2004</h3>
                             </div>
@@ -140,7 +137,6 @@
                                 dolorem.</p>
                             <div class="education-line">
                                 <h3> JANUARY, 2001 </h3>
-
                             </div>
                             <h3>Master Degree Of Design</h3>
                             <p class="education-location">VISUAL / UI DESIGNER</p>
@@ -149,36 +145,32 @@
                                 magni earum
                                 quo soluta sint
                                 velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>-->
+                                dolorem.</p>
                         </div>
                     </div>
                 </section>
-                <!--portfolio sectionu baslayir-->
                 <section id="portfolio">
                     <div class="portfolio">
                         <div class="heading">
                             <div class="portfolio-heading">
-                                <h2>MƏNİM İŞLƏRİM</h2>
+                                <h2>Mənim işlərim</h2>
                                 <hr>
                             </div>
                         </div>
-                        <div class="menu">
-                            <!-- <div  ><span>MƏNİM İŞLƏRİM</span></div>
-                            <div ><span>BRANDING</span></div>
-                            <div ><span>ILLUSTRATION</span></div>
-                            <div  ><span>WORDPRESS</span></div>
-                            <div><span>SITE TEMPLATE</span></div>-->
+                        <div class="menu" id="mybtnContainer">
+
                         </div>
                         <div class="img-frame">
                             <div class="img-video">
+                                {% for prt in portfolio %}
                                 <div class="img-items">
                                     <div class="test">
-                                        <i class="fa fa-image"></i>
-                                        <p>Mənim portfoliom</p>
+                                        <i class="{{prt.icon}}"></i>
+                                        <p>{{prt.projectname}}</p>
                                     </div>
-                                    <img src="https://i.pinimg.com/474x/b4/3c/0b/b43c0b0d65e7500b6f95222ae5021835.jpg"
-                                        alt="">
+                                    <img src="{{prt.img}}" alt="">
                                 </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -194,24 +186,24 @@
                         </div>
                     </div>
                     <div class="comment-frame">
+                        {%for cmnt in references %}
                         <div class="comment">
-                            <div class="rey"><q>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime
-                                    laborum sequi, magni earum quo soluta sint velit numquam, ipsum illum! Nostrum
-                                    possimus illo architecto praesentium ut aliquam dolorem.”
+                            <div class="rey"><q>{{cmnt.rey}}
                                 </q></div>
                             <div class="commenter-bio">
-                                <div class="commenter-info"><img
-                                        src="http://themeelite.com/demos/flatr/img/referance1@2x.jpg">
+                                <div class="commenter-info">
+                                    <img src="{{cmnt.img}}">
                                     <div class="commenter-details">
                                         <div class="commenter-name">
-                                            <p class="reyci-adi">Gulsen Zalova</p>
-                                            <p class="reyci-isi">Front-End Developer</p>
-
+                                            <p class="reyci-adi">{{cmnt.cmntrname}}</p>
+                                            <p class="reyci-isi">{{cmnt.cmntrjob}}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
+                        <!--
                         <div class="comment">
                             <div class="rey">
                                 <q>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
@@ -223,12 +215,12 @@
                                 <div class="commenter-info"><img
                                         src="http://themeelite.com/demos/flatr/img/referance2@2x.jpg">
                                     <div class="commenter-details">
-                                        <p class="reyci-adi"> Emil Abdullayev</p>
-                                        <p class="reyci-isi"> Back-End Developer</p>
+                                        <p class="reyci-adi"> Nurlan Rejebov</p>
+                                        <p class="reyci-isi"> Front-End Developer</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </section>
                 <!--references sectionunun sonu-->
@@ -253,6 +245,7 @@
                 <!--connect sectionunun sonu-->
                 <!--form sectionu baslayir-->
                 <section id="form">
+
                     <div class="form-box">
                         <form>
                             <p>Drop me a line</p>
@@ -260,6 +253,7 @@
 
                             <div class="name">
                                 <label> </label>
+
                                 <input type="text" class="minimal" name="name" id="name" placeholder="Enter name"
                                     required>
                             </div>
@@ -276,15 +270,14 @@
                             </div>
                             <div class="entermessage">
                                 <label> </label>
-                                <!--
-                                <textarea class="minimal" name="message" id="message" placeholder="Enter message"
-                                    required></textarea>-->
-                                <input type="text" class="minimal" name="Message" id="message"
-                                    placeholder="Enter message" required></div>
-                            <div class="submit"><label> </label>
-                                <!-- <input type="button" class="submit" value="Submit"> -->
-                                <button type="submit">Submit</button>
-                            </div>
+                                <!--<textarea class="minimal" name="message" id="message" placeholder="Enter message"
+                                    required></textarea></div>-->
+                                <input type="text" class="minimal" name="message" id="message"
+                                    placeholder="Enter message" required>
+                                <div class="submit"><label> </label>
+                                    <!-- <input type="button" class="submit" value="Submit"> -->
+                                    <button type="submit">Submit</button>
+                                </div>
                         </form>
                     </div>
                 </section>
