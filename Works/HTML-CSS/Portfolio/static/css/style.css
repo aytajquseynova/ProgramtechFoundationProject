@@ -203,6 +203,25 @@ h2 {
 
 }
 
+.skill-icons i {
+  color: #F56040;
+  margin-right: 40px;
+}
+
+.skill-icons i:nth-child(2) {
+  color: #156AA6;
+  margin-right: 40px;
+}
+
+.skill-icons i:nth-child(3) {
+  color: #F7D604;
+  margin-right: 40px;
+}
+
+.skill-icons i:nth-child(4) {
+  color: #306998;
+}
+
 /*tehsilvetecrube sectionu baslayir*/
 #tehsilvetecrube {
   padding-right: 30px;

@@ -18,6 +18,7 @@
         <div class="blackframe-container">
             <div class="container">
                 <div class="bg-img"></div>
+                <!--main sectionu baslayir-->
                 <section id="main">
                     <div class="main-container">
                         <nav class="navbar">
@@ -42,34 +43,36 @@
                         </div>
                     </div>
                 </section>
+                <!--main sectionun sonu -->
+                <!--about sectionu baslayir-->
                 <section id="about">
                     <div class="section-about">
                         <h2 class="Mənim haqqımda">Haqqımda</h2>
                         <hr>
-                        <p>Mən, Aytac Hüseynova</p>
-                        <p> Salam, mən Aytac Hüseynova. 20 yaşım var. Azərbaycan Dövlət Neft və Sənaye Universiteti
-                            SABAH fakültəsi Proseslərin avtomatlaşdırılması mühəndisliyində 4-cü kurs tələbəsiyəm. Eyni
-                            zamanda "Pragmatech Education" kursu vasitəsilə development sahəsi üzrə təhsil alıram.
-                            Məqsədim Front-End Developer olmaqdır. </p>
+                        {%for about in about %}
+                        <p>{{about.name}}</p>
+                        <p> {{about.shortInfo}} </p>
                         <br>
+                        {%endfor%}
                     </div>
                 </section>
+                <!--about sectionu bitir-->
                 <!--personal skills baslayir-->
-                <section id="skills"></section>
-                <div class="personal-skills">
-                    <h2>PERSONAL SKILLS</h2>
-                    <hr>
-                    <div class="skill-icons">
-                        <i class="fab fa-html5" style="color: #F56040; margin-right:40px;"></i>
-                        <i class="fab fa-css3-alt" style="color: #156AA6;margin-right:40px;"></i>
-                        <i class="fab fa-js-square" style="color:#F7D604;margin-right:40px;"></i>
-                        <i class="fab fa-python" style="color: #306998"></i>
+                <section id="skills">
+                    <div class="personal-skills">
+                        <h2>Şəxsi bacarıqlar</h2>
+                        <hr>
+                        <div class="skill-icons">
+                            {%for skill in skill %}
+                            <i class="{{skill.icon}}"></i>
+                            {%endfor%}
+                        </div>
                     </div>
-                </div>
+                </section>
                 <!--skills section end-->
+                <!--tehsilvetecrube sectionu baslayir-->
                 <section id="tehsilvetecrube">
                     <div class="work">
-
                         <h2>WORK EXPERIENCE</h2>
                         <hr>
                         <div class="work-items">
@@ -83,7 +86,6 @@
                                 magni earum quo soluta sint
                                 velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
                                 dolorem.</p>
-
                             <div class="work-line">
                                 <h3> MARCH'11 - DECEMBER'12 </h3>
                             </div>
@@ -109,7 +111,6 @@
                         </div>
                     </div>
                     <div class="education">
-
                         <h2>EDUCATION & DIPLOMAS</h2>
                         <hr>
                         <div class="education-items">
@@ -149,6 +150,8 @@
                         </div>
                     </div>
                 </section>
+                <!--tehsilvetecrube sectionunun sonu-->
+                <!--portfolio sectionu baslayir-->
                 <section id="portfolio">
                     <div class="portfolio">
                         <div class="heading">
@@ -158,7 +161,6 @@
                             </div>
                         </div>
                         <div class="menu" id="mybtnContainer">
-
                         </div>
                         <div class="img-frame">
                             <div class="img-video">
@@ -175,6 +177,7 @@
                         </div>
                     </div>
                 </section>
+                <!--portfolio sectionu bitir-->
                 <!--references seectionu baslayir-->
                 <section id="references">
                     <div class="heading">
@@ -203,24 +206,6 @@
                             </div>
                         </div>
                         {% endfor %}
-                        <!--
-                        <div class="comment">
-                            <div class="rey">
-                                <q>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                    magni earum quo soluta sint velit numquam, ipsum illum! Nostrum possimus illo
-                                    architecto praesentium ut aliquam dolorem.”
-                                </q>
-                            </div>
-                            <div class="commenter-bio">
-                                <div class="commenter-info"><img
-                                        src="http://themeelite.com/demos/flatr/img/referance2@2x.jpg">
-                                    <div class="commenter-details">
-                                        <p class="reyci-adi"> Nurlan Rejebov</p>
-                                        <p class="reyci-isi"> Front-End Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
                     </div>
                 </section>
                 <!--references sectionunun sonu-->
@@ -245,15 +230,12 @@
                 <!--connect sectionunun sonu-->
                 <!--form sectionu baslayir-->
                 <section id="form">
-
                     <div class="form-box">
                         <form>
                             <p>Drop me a line</p>
                             <hr>
-
                             <div class="name">
                                 <label> </label>
-
                                 <input type="text" class="minimal" name="name" id="name" placeholder="Enter name"
                                     required>
                             </div>
@@ -286,6 +268,4 @@
         </div>
     </div>
     </div>
-
-
 </body>
