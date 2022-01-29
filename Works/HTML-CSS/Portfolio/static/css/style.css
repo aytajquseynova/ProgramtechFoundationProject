@@ -599,17 +599,17 @@ q {
 /*connect section baglandi*/
 /*form section basladi*/
 #form {
-  background-color: #e8eaed;
+  /*background-color: #e8eaed;*/
   min-height: 410px;
-  padding: 45px 40px;
+  padding: 45px 97px;
   top: 60px;
-  right: 161px
+  right: 161px;
 }
 
 .form-box {
   background-color: white;
   padding: 45px 40px;
-  width: 365px;
+  /*width: 365px;*/
   margin: 0 0 0 auto;
   box-shadow: 1px 0px 18px 4px rgb(91 94 250 / 20%);
   -moz-box-shadow: 1px 0px 18px 4px rgba(91, 94, 250, 0.2);
@@ -697,10 +697,24 @@ input {
   line-height: 26px;
   min-height: 62px;
 }
-
+.form-box input#message{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  -webkit-appearance: none;
+  background: #fff;
+  color: #000;
+  padding: 0.5em 1em 0.5em 0;
+  border-bottom: 2px solid #adaefc;
+  line-height: 26px;
+  min-height: 62px;
+}
+/*
 .e-mail {
   border: none;
 }
+*/
 
 .submit {
   display: flex;
@@ -716,7 +730,6 @@ input {
   -ms-transition: all ease .4s;
   -o-transition: all ease .4s;
 }
-
 .submit button {
   transition: all ease .4s;
 
