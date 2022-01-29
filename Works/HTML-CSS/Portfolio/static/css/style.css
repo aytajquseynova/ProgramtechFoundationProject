@@ -697,7 +697,8 @@ input {
   line-height: 26px;
   min-height: 62px;
 }
-.form-box input#message{
+
+.form-box input#message {
   border-top: none;
   border-right: none;
   border-left: none;
@@ -710,6 +711,7 @@ input {
   line-height: 26px;
   min-height: 62px;
 }
+
 /*
 .e-mail {
   border: none;
@@ -730,6 +732,7 @@ input {
   -ms-transition: all ease .4s;
   -o-transition: all ease .4s;
 }
+
 .submit button {
   transition: all ease .4s;
 
