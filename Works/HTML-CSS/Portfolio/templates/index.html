@@ -76,78 +76,31 @@
                         <h2>WORK EXPERIENCE</h2>
                         <hr>
                         <div class="work-items">
+                            {%for work in work%}
                             <div class="work-line">
-                                <h3>JANUARY, 2013 - PRESENT</h3>
+                                <h3>{{work.time}}</h3>
                             </div>
-                            <h3>Flash media inc.</h3>
-                            <p class="job-location">SENIOR UX/UI DESIGNER</p>
+                            <h3>{{work.place}}</h3>
+                            <p class="job-location">{{work.job}}</p>
                             <p class="work-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum quo soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                            <div class="work-line">
-                                <h3> MARCH'11 - DECEMBER'12 </h3>
+                                {{work.shortInfo}}</p>
+                                {%endfor%}
                             </div>
-                            <h3>Codedash Studio</h3>
-                            <p class="job-location"> UX DESIGNER</p>
-                            <p class="work-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum
-                                quo soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                            <div class="work-line">
-                                <h3> JULY'09 - APRIL'11 </h3>
-                            </div>
-                            <h3>Foursqure Studio</h3>
-                            <p class="job-location">VISUAL / UI DESIGNER</p>
-                            <p class="work-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum
-                                quo soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                        </div>
                     </div>
                     <div class="education">
                         <h2>EDUCATION & DIPLOMAS</h2>
                         <hr>
                         <div class="education-items">
+                            {%for education in education%}
                             <div class="education-line">
-                                <h3>JANUARY, 2007 </h3>
+                                <h3>{{education.time}}</h3>
                             </div>
-                            <h3>Master Degree Of Design</h3>
-                            <p class="education-location">UNIVERSITY OF DESIGN</p>
+                            <h3>{{education.place}}</h3>
+                            <p class="education-location">{{education.job}}</p>
                             <p class="education-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum quo
-                                soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                            <div class="education-line">
-                                <h3> JUNE, 2004</h3>
-                            </div>
-                            <h3>Bachelor Of Arts</h3>
-                            <p class="education-location"> UNIVERSITY OF DESIGN</p>
-                            <p class="education-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum
-                                quo soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                            <div class="education-line">
-                                <h3> JANUARY, 2001 </h3>
-                            </div>
-                            <h3>Master Degree Of Design</h3>
-                            <p class="education-location">VISUAL / UI DESIGNER</p>
-                            <p class="education-about">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,
-                                magni earum
-                                quo soluta sint
-                                velit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam
-                                dolorem.</p>
-                        </div>
+                                {{education.shortInfo}}</p>
+                                {%endfor%}
+                             </div>
                     </div>
                 </section>
                 <!--tehsilvetecrube sectionunun sonu-->

@@ -41,6 +41,74 @@ skill=[
     ),
          ]
 #skills sectionu bitir
+#work classi baslayir
+class Work:
+    def __init__(self,id,time,place, job, shortInfo):
+        self.id=id
+        self.time=time
+        self.place=place
+        self.job=job
+        self.shortInfo=shortInfo
+work=[
+    Work(
+        random.randint(1,500),
+        "JANUARY, 2013 - PRESENT",
+        "Flash media inc.",
+        "SENIOR UX/UI DESIGNER",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    ),
+      Work(
+        random.randint(1,500),
+        "MARCH'11 - DECEMBER'12",
+        "Codedash Studio",
+        "UX DESIGNER<",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    ),
+       Work(
+        random.randint(1,500),
+        "JULY'09 - APRIL'11",
+        "Foursqure Studio",
+        "VISUAL / UI DESIGNER",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    )
+      
+    
+    ]
+#work classin sonu
+#education classi baslayir
+class Education:
+    def __init__(self,id,time,place, job, shortInfo):
+        self.id=id
+        self.time=time
+        self.place=place
+        self.job=job
+        self.shortInfo=shortInfo
+education=[
+    Education(
+        random.randint(1,500),
+        "JANUARY, 2007",
+        "Master Degree Of Design",
+        "UNIVERSITY OF DESIGN",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    ),
+      Education(
+        random.randint(1,500),
+        "JUNE, 2004",
+        "Bachelor Of Arts",
+        "UNIVERSITY OF DESIGN",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    ),
+       Education(
+        random.randint(1,500),
+        "JANUARY, 2001",
+        "Master Degree Of Design",
+        "VISUAL / UI DESIGNER",
+        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime laborum sequi,magni earum quo soluta sintvelit numquam, ipsum illum! Nostrum possimus illo architecto praesentium ut aliquam dolorem"
+    )
+      
+    
+    ]
+#education classi sonu
 #portfolio sectionu baslayir
 class Portfolio:
     def __init__(self, id, icon,projectname,img,):
@@ -92,6 +160,6 @@ references=[
 app=Flask(__name__)
 @app.route("/")
 def index():
-    return render_template("index.html",about=about,skill=skill,portfolio=portfolio,references=references )
+    return render_template("index.html",about=about,skill=skill,work=work,education=education,portfolio=portfolio,references=references )
 if __name__=="__main__":
     app.run(debug=True)
