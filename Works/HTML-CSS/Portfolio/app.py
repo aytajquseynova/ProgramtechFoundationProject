@@ -161,5 +161,9 @@ app=Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html",about=about,skill=skill,work=work,education=education,portfolio=portfolio,references=references )
+@app.route("/admin")
+def admin():
+    return render_template('admin/index.html')
+
 if __name__=="__main__":
     app.run(debug=True)
