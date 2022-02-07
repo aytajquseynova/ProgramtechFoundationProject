@@ -174,6 +174,9 @@ def feedback():
 @app.route("/admin/tehsil")
 def tehsil():
     return render_template('admin/tehsil.html')
+@app.route("/admin/tecrube")
+def tecrube():
+    return render_template('admin/tecrube.html')
 
 if __name__=="__main__":
     app.run(debug=True)

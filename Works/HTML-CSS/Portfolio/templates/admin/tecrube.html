@@ -1,0 +1,41 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Təcrübə</h2>
+    <div class="form-box">
+        <form action="/admin/" for="exampleFormControlInput1" class="form-label">
+
+            <div class="baslamatarixi">
+                <label> </label>
+
+                <input type="text" class="input" name="time" id="time" placeholder="Baslama tarixi" required>
+            </div>
+            <div class="sekil">
+                <label> </label>
+                <input type="text" class="input" name="bitmetarixi" id="bitmetarixi" placeholder="Bitme tarixi"
+                    required>
+            </div>
+            <div class="cmntrname">
+                <label> </label>
+
+                <input type="text" class="input" name="isyeri" id="isyeri" placeholder="İş yeri"
+                    required>
+            </div>
+            <div class="img">
+                <label> </label>
+
+                <input type="text" class="input" name="img" id="yer" placeholder="Yer" required>
+            </div>
+            <div class="img">
+                <label> </label>
+
+                <input type="text" class="input" name="img" id="melumat" placeholder="Melumat" required>
+            </div>
+            <div class="submit">
+                <label> </label>
+                <!-- <input type="button" class="submit" value="Submit"> -->
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
