@@ -154,13 +154,14 @@ references=[
        "http://themeelite.com/demos/flatr/img/referance2@2x.jpg",
        "Emil Abdullayev",
        'Back-End Developer'
-       )
+       ),
+     
 ]     
 #references sectionu bitir   
 app=Flask(__name__)
 @app.route("/")
 def index():
-    return render_template("index.html",about=about,skill=skill,work=work,education=education,portfolio=portfolio,references=references )
+    return render_template("app/index.html",about=about,skill=skill,work=work,education=education,portfolio=portfolio,references=references )
 @app.route("/admin")
 def admin():
     return render_template('admin/index.html')
