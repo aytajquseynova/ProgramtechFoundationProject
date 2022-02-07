@@ -2,42 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
-
+    <link rel="stylesheet" href="/static/admin/css/admin.css" />
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
 </head>
 
 <body>
     <div class="container">
         <div class="admin-panel-nav">
-        <div class="adminpanel">
-            <p>Admin panel</p>
+            <div class="adminpanel">
+                <p>Admin panel</p>
+            </div>
         </div>
         <div class="navbar-menu">
-            <ul>
-                <li>Özünü təqdim et</li>
-            </ul>
-            <ul>
-                <li>Bacarıqlar</li>
-            </ul>
-            <ul>
-                <li>Təhsil və təcrübə</li>
-            </ul>
-            <ul>
-                <li>Rəylər</li>
-            </ul>
-            <ul>
+            <ul class="d-flex">
+                <li><a href="/admin/tehsil">Təhsil</a></li>
+                <li><a href="/admin/feedbacks">Rəylər</a></li>
                 <li>Əlaqə</li>
             </ul>
-        </div></div>
-        <div class="admin-img">
-           <img src="aytacpp.jpeg">
         </div>
+        <div class="admin-img">
+            <img src="/static/admin/images/aytacpp.jpeg">
+        </div>
+    </div>
+    <div class="input-item">
+        <!-- Page wrapper  -->
+        {% block content %} {% endblock %}
+        <!-- End wrapper  -->
     </div>
 </body>
 

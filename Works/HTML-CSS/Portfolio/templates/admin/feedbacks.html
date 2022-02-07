@@ -1,0 +1,34 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Rəylər</h2>
+    <div class="form-box">
+        <form action="/admin/feedbacks" for="exampleFormControlInput1" class="form-label">
+
+            <div class="rey">
+                <label> </label>
+
+                <input type="text" class="input" name="rey" id="rey" placeholder="Rey" required>
+            </div>
+            <div class="sekil">
+                <label> </label>
+                <input type="text" class="input" name="sekil" id="sekil" placeholder="Sekil" required>
+            </div>
+            <div class="cmntrname">
+                <label> </label>
+
+                <input type="text" class="input" name="cmntrname" id="cmntrname" placeholder="Rey yazanin adi" required>
+            </div>
+            <div class="img">
+                <label> </label>
+
+                <input type="text" class="input" name="img" id="img" placeholder="Rey yazanin sekli" required>
+            </div>
+            <div class="submit">
+                <label> </label>
+                <!-- <input type="button" class="submit" value="Submit"> -->
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
