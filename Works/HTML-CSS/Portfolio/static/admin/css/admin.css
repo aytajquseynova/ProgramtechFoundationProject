@@ -109,6 +109,11 @@ input {
     line-height: 26px;
     min-height: 62px;
 }
+h2{
+      text-align: center;
+      margin-bottom: 10px;
+      }
+
 
 /*
 .form-box input#sekil {
