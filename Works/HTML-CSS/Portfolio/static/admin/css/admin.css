@@ -15,12 +15,7 @@ body {
 
 .navbar-menu {
     display: flex;
-    /* padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 100px;
-    margin-right: 100px; */
-
-}
+   }
 
 .navbar-menu ul li {
     list-style: none;
@@ -29,8 +24,6 @@ body {
 .navbar-menu ul li:not(:first-child) {
     margin-left: 20px;
 }
-
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -42,7 +35,6 @@ body {
 .admin-img img {
     width: 50px;
     height: 50px;
-
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -51,12 +43,8 @@ body {
 }
 
 
-
-
-/* Form Section */
-
 #form {
-    /*background-color: #e8eaed;*/
+
     min-height: 410px;
     padding: 45px 97px;
     top: 60px;
@@ -66,7 +54,6 @@ body {
 .form-box {
     background-color: white;
     padding: 45px 40px;
-    /*width: 365px;*/
     margin: 0 0 0 auto;
     box-shadow: 1px 0px 18px 4px rgb(91 94 250 / 20%);
     -moz-box-shadow: 1px 0px 18px 4px rgba(91, 94, 250, 0.2);
@@ -109,32 +96,11 @@ input {
     line-height: 26px;
     min-height: 62px;
 }
-h2{
-      text-align: center;
-      margin-bottom: 10px;
-      }
 
-
-/*
-.form-box input#sekil {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    width: 100%;
-    -webkit-appearance: none;
-    background: #fff;
-    color: #000;
-    padding: 0.5em 1em 0.5em 0;
-    border-bottom: 2px solid #adaefc;
-    line-height: 26px;
-    min-height: 62px;
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
 }
-*/
-/*
-.e-mail {
-  border: none;
-}
-*/
 
 .submit {
     display: flex;
@@ -165,14 +131,11 @@ h2{
     line-height: 15px;
     text-transform: uppercase;
     background-color: transparent;
-    /* height: 20px;
-  width: 87px; */
     border: none;
     border-bottom: 4px solid black;
-    /* margin-left: 63px; */
+
 }
 
-/* Common */
 .d-flex {
     display: flex;
 }
