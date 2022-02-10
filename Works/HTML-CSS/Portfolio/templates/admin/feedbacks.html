@@ -1,34 +1,33 @@
 {% extends "admin/base.html" %} {% block content %}
 <section id="form">
-    <h2>Rəylər</h2>
-    <div class="form-box">
-        <form action="/admin/feedbacks" for="exampleFormControlInput1" class="form-label">
+  <h2>Rəylər</h2>
+  <div class="form-box">
+    <form action="/admin/feedbacks" method="post" enctype="multipart/form-data" for="exampleFormControlInput1"
+      class="form-label">
+      <div class="rey">
+        <label> </label>
 
-            <div class="rey">
-                <label> </label>
+        <input type="text" class="input" name="rey" id="rey" placeholder="Rəy" required />
+      </div>
+      <div class="cmntrname">
+        <label> </label>
 
-                <input type="text" class="input" name="rey" id="rey" placeholder="Rəy" required>
-            </div>
-            <div class="sekil">
-                <label> </label>
-                <input type="text" class="input" name="sekil" id="sekil" placeholder="Şəkil" required>
-            </div>
-            <div class="cmntrname">
-                <label> </label>
+        <input type="text" class="input" name="cmntrname" id="cmntrname" placeholder="Rəy yazanın adı" required />
+      </div>
+      <div class="cmntrjob">
+        <label> </label>
 
-                <input type="text" class="input" name="cmntrname" id="cmntrname" placeholder="Rəy yazanın adı" required>
-            </div>
-            <div class="img">
-                <label> </label>
-
-                <input type="text" class="input" name="img" id="img" placeholder="Rəy yazanın şəkli" required>
-            </div>
-            <div class="submit">
-                <label> </label>
-                <!-- <input type="button" class="submit" value="Submit"> -->
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+        <input type="text" class="input" name="cmntrjob" id="cmntrjob" placeholder="Rəy yazanın işi" required />
+      </div>
+      <div class="img">
+        <label> </label>
+        <input type="file" class="input" name="img" id="img" placeholder="Rəy yazanın şəkli" required />
+      </div>
+      <div class="submit">
+        <label> </label>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </section>
 {% endblock %}

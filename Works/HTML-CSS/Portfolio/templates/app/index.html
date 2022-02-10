@@ -141,17 +141,17 @@
                         </div>
                     </div>
                     <div class="comment-frame">
-                        {%for cmnt in references %}
+                        {%for cmnt in feed %}
                         <div class="comment">
-                            <div class="rey"><q>{{cmnt.rey}}
+                            <div class="rey"><q>{{cmnt.feedback_rey}}
                                 </q></div>
                             <div class="commenter-bio">
                                 <div class="commenter-info">
-                                    <img src="{{cmnt.img}}">
+                                    <img src="{{cmnt.feedback_img}}">
                                     <div class="commenter-details">
                                         <div class="commenter-name">
-                                            <p class="reyci-adi">{{cmnt.cmntrname}}</p>
-                                            <p class="reyci-isi">{{cmnt.cmntrjob}}</p>
+                                            <p class="reyci-adi">{{cmnt.feedback_cmntrname}}</p>
+                                            <p class="reyci-isi">{{cmnt.feedback_cmntrjob}}</p>
                                         </div>
                                     </div>
                                 </div>
