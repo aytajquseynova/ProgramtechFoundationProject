@@ -15,7 +15,7 @@ body {
 
 .navbar-menu {
     display: flex;
-   }
+}
 
 .navbar-menu ul li {
     list-style: none;
@@ -24,6 +24,7 @@ body {
 .navbar-menu ul li:not(:first-child) {
     margin-left: 20px;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -94,7 +95,6 @@ input {
     padding: 0.5em 1em 0.5em 0;
     border-bottom: 2px solid #adaefc;
     line-height: 26px;
-    min-height: 62px;
 }
 
 h2 {

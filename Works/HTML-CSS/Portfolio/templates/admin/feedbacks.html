@@ -28,6 +28,33 @@
         <button type="submit">Submit</button>
       </div>
     </form>
+    <div class="pl-60 mt-5">
+      <table class="table rounded text-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Adi</th>
+            <th scope="col">Ishi</th>
+            <th scope="col">Rey</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%for feedback in feedbacks%}
+          <tr>
+            <td>{{feedback.id}}</td>
+            <td>{{feedback.feedback_cmntrname}}</td>
+            <td>{{feedback.feedback_cmntrjob}}</td>
+            <td>{{feedback.feedback_rey}}</td>
+            <td><a href="#"><i class="far fa-edit" style="color: #adaefc;"></i></a></td>
+            <td><a href="/feedbackDelete/{{feedback.id}}"> <i class="far fa-trash-alt" style="color: #adaefc;"></i></a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 {% endblock %}
