@@ -1,0 +1,38 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Əlaqə</h2>
+    <form action="/admin/contact" method="post" enctype="multipart/form-data" for="exampleFormControlInput1"
+        class="form-label" method="post">
+        <div class="pl-60 mt-5">
+            <table class="table rounded text-light">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Message</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for cntct in contact%}
+                    <tr>
+                        <td>{{cntct.id}}</td>
+                        <td>{{cntct.contact_name}}</td>
+                        <td>{{cntct.contact_email}}</td>
+                        <td>{{cntct.contact_subject}}</td>
+                        <td>{{cntct.contact_message}}</td>
+                        
+                        <td><a href="/contactDelete/{{cntct.id}}"> <i class="far fa-trash-alt"
+                                    style="color: #adaefc;"></i></a>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+</section>
+{% endblock %}

@@ -1,4 +1,6 @@
 from run import db
+from enum import unique
+from flask_login.mixins import UserMixin
 #Tehsil
 class Education(db.Model):
     id=db.Column(db.Integer,primary_key=True)
@@ -26,3 +28,19 @@ class Portfolio(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     portfolio_img = db.Column(db.String(100))
     portfolio_title = db.Column(db.String(100))
+    
+#Contact    
+class Contact(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    contact_name = db.Column(db.String(100))
+    contact_email = db.Column(db.String(100))
+    contact_subject = db.Column(db.String(100))
+    contact_message = db.Column(db.String(100))
+    
+# Login
+class Login(UserMixin ,db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    admin_username = db.Column(db.String(50))
+    admin_password = db.Column(db.String(50))
+    log_bool = db.Column(db.Boolean)
+    

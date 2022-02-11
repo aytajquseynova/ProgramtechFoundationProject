@@ -1,13 +1,53 @@
 import flask 
 from run import app 
+from flask_login.utils import login_user
 from flask import Flask,render_template,url_for,redirect,request
 from models import *
+from flask_login import LoginManager, UserMixin, login_manager, login_user, login_required, logout_user, current_user
+from run import login_manager
+
+# Login
+@login_manager.user_loader
+def load_user(user_id):
+    from models import Login
+    return Login.query.get(int(user_id))
+
+@app.route("/login",methods=["GET","POST"])
+def admin_login():
+    from models import Login
+    from run import db
+    login = Login(
+        admin_username = "Aytaj",
+        admin_password = "aytaj22",
+        log_bool = False
+    )
+    db.session.add(login)
+    db.session.commit()
+    
+    if request.method == "POST":
+        if login.admin_username == request.form["admin_username"] and login.admin_password == request.form["admin_password"]:
+            login_user(login, remember=login.log_bool)
+            return redirect (url_for("admin"))
+        else:
+            return redirect(url_for("admin_login"))
+
+    return render_template("admin/login.html", login = login)
+
+
+# Logout
+@app.route("/logout")
+@login_required
+def admin_logout():
+    logout_user()
+    return redirect (url_for("admin"))
 
 @app.route("/admin",methods=["GET","POST"])
+@login_required
 def admin():
     return render_template("admin/base.html")
 #Admin Experience
 @app.route("/admin/experience",methods=["GET","POST"])
+@login_required
 def experience():
     from models import Experience
     import os
@@ -41,6 +81,7 @@ def experience_delete(id):
     return redirect ("/admin/experience")
 #Update Experience
 @app.route("/experienceEdit/<int:id>",methods=["GET","POST"])
+@login_required
 def experience_edit(id):
     from models import Experience
     from run import db
@@ -57,6 +98,7 @@ def experience_edit(id):
     return render_template ("/admin/update_tecrube.html",newExperience=newExperience)
 #Admin Education
 @app.route("/admin/education",methods=["GET","POST"])
+@login_required
 def education():
     from models import Education
     import os
@@ -80,6 +122,7 @@ def education():
     return render_template('admin/tehsil.html',education=education)
 #Delete Education
 @app.route("/educationDelete/<int:id>",methods=["GET","POST"])
+@login_required
 def education_delete(id):
     from models import Education
     import os
@@ -90,6 +133,7 @@ def education_delete(id):
     return redirect ("/admin/education")
 #Update Education
 @app.route("/educationEdit/<int:id>",methods=["GET","POST"])
+@login_required
 def education_edit(id):
     from models import Education
     from run import db
@@ -106,6 +150,7 @@ def education_edit(id):
     return render_template ("/admin/update_tehsil.html",newEducation=newEducation)
 # Admin Feedbacks
 @app.route("/admin/feedbacks",methods=["GET","POST"])
+@login_required
 def feedback():
     from models import Feedbacks
     import os
@@ -133,6 +178,7 @@ def feedback():
 
 # Delete
 @app.route("/feedbackDelete/<int:id>",methods=["GET","POST"])
+@login_required
 def feedback_delete(id):
     from models import Feedbacks
     import os
@@ -145,6 +191,7 @@ def feedback_delete(id):
 # Update Feedback
 
 @app.route("/feedbackEdit/<int:id>",methods=["GET","POST"])
+@login_required
 def feedback_edit(id):
     from models import Feedbacks
     from run import db
@@ -160,6 +207,7 @@ def feedback_edit(id):
 
 #Portfolio admin
 @app.route('/admin/portfolio', methods=["GET","POST"])
+@login_required
 def portfolio():
     from models import Portfolio
     import os
@@ -181,8 +229,9 @@ def portfolio():
         return redirect("/")
     return render_template('admin/portfolio.html',portfolios=portfolios)
 
-
+#Delete Portfolio
 @app.route("/portfolioDelete/<int:id>",methods=["GET","POST"])
+@login_required
 def portfolio_delete(id):
     from models import Portfolio
     import os
@@ -194,6 +243,7 @@ def portfolio_delete(id):
     return redirect ("/admin/portfolio")
 
 @app.route('/portfolioEdit/<int:id>',methods=["GET","POST"])
+@login_required
 def portfolio_edit(id):
     from models import Portfolio
     from run import db
@@ -204,3 +254,40 @@ def portfolio_edit(id):
         db.session.commit()
         return redirect("/")
     return render_template ("/admin/update_portfolio.html",newPortfolio=newPortfolio)
+
+#Admin Contact
+@app.route("/admin/contact",methods=["GET","POST"])
+@login_required
+def contact():
+    from models import Contact
+    import os
+    from run import db
+    from werkzeug.utils import secure_filename
+    contact = Contact.query.all()
+    if request.method=="POST":
+        contact_name = request.form["name"]
+        contact_email=request.form["email"]
+        contact_subject=request.form["subject"]
+        contact_message=request.form["message"]
+        elaqe = Contact(
+           contact_name=contact_name,
+           contact_email= contact_email,
+           contact_subject=contact_subject,
+           contact_message=contact_message
+           )
+        db.session.add(elaqe)
+        db.session.commit()
+        return redirect("/")
+    return render_template('admin/contact.html',contact=contact)
+#Delete Contact
+@app.route("/contactDelete/<int:id>",methods=["GET","POST"])
+@login_required
+def contact_delete(id):
+    from models import Contact
+    import os
+    from run import db
+    contact = Contact.query.filter_by(id=id).first()
+
+    db.session.delete(contact)
+    db.session.commit()
+    return redirect ("/admin/contact")

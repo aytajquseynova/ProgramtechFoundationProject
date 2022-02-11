@@ -136,6 +136,8 @@ h2 {
 
 }
 
-.d-flex {
-    display: flex;
+.logout {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
 }
