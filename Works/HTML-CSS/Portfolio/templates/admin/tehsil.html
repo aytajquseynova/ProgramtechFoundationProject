@@ -22,15 +22,10 @@
                 <input type="text" class="input" name="tehsilqurumu" id="tehsilqurumu" placeholder="Təhsil qurumu"
                     required>
             </div>
-            <div class="yer">
-                <label> </label>
-
-                <input type="text" class="input" name="yer" id="yer" placeholder="Yer" required>
-            </div>
             <div class="info">
                 <label> </label>
 
-                <input type="text" class="input" name="info" id="melumat" placeholder="Məlumat" required>
+                <input type="text" class="input" name="yer" id="melumat" placeholder="Məlumat" required>
             </div>
             <div class="submit">
                 <label> </label>
@@ -44,10 +39,10 @@
              <thead>
                  <tr>
                      <th scope="col">#</th>
-                     <th scope="col">Baslama ve Bitme tarixi</th>
-                     <th scope="col">Derece</th>
-                     <th scope="col">Tehsil qurumu</th>
-                     <th scope="col">Kicik informasiya</th>
+                     <th scope="col">Başlama ve Bitmə tarixi</th>
+                     <th scope="col">Dərəcə</th>
+                     <th scope="col">Təhsil qurumu</th>
+                     <th scope="col">Kiçik informasiya</th>
                      <th scope="col">Update</th>
                      <th scope="col">Delete</th>
                  </tr>
@@ -60,9 +55,9 @@
                      <td>{{edu.education_title}}</td>
                      <td>{{edu.education_description}}</td>
                      <td>{{edu.education_information}}</td>
-                     <td><a href="/portfolioEdit/{{portfolio.id}}"><i class="far fa-edit"
+                     <td><a href="/educationEdit/{{edu.id}}"><i class="far fa-edit"
                                  style="color: #adaefc;"></i></a></td>
-                     <td><a href="/eduDelete/{{edu.id}}"> <i class="far fa-trash-alt"
+                     <td><a href="/educationDelete/{{edu.id}}"> <i class="far fa-trash-alt"
                                  style="color: #adaefc;"></i></a>
                      </td>
                  </tr>

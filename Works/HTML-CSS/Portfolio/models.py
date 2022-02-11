@@ -6,8 +6,13 @@ class Education(db.Model):
     education_title= db.Column(db.String(100))
     education_description = db.Column(db.String(100))
     education_information = db.Column(db.String(100))
-    
-
+#Experince
+class Experience(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    experience_date = db.Column(db.String(100))
+    experience_title= db.Column(db.String(100))
+    experience_description = db.Column(db.String(100))
+    experience_information = db.Column(db.String(100))
 # Feedback
 class Feedbacks(db.Model):
     id=db.Column(db.Integer,primary_key=True)

@@ -1,0 +1,33 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Update Education</h2>
+    <div class="form-box">
+        <form action="/educationEdit/{{newEducation.id}}" method="post" enctype="multipart/form-data"
+            for="exampleFormControlInput1" class="form-label">
+            <div class="baslamavebitmetarixi">
+                <label></label>
+                <input type="text" class="input" name="time" id="rey" value="{{newEducation.education_date}}" required />
+            </div>
+            <div class="derece">
+                <label></label>
+                <input type="text" class="input" name="derece" id="cmntrname"
+                    value="{{newEducation.education_title}}" required />
+            </div>
+            <div class="tehsilqurumu">
+                <label></label>
+                <input type="text" class="input" name="tehsilqurumu" id="cmntrjob" value="{{newEducation.education_description}}"
+                    required />
+            </div>
+            <div class="info">
+                <label></label>
+                <input type="text" class="input" name="yer" id="cmntrjob" value="{{newEducation.education_information}}"
+                    required />
+            </div>
+            <div class="submit">
+                <label></label>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

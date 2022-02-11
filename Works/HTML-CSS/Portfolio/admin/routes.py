@@ -4,7 +4,7 @@ from flask import Flask,render_template,url_for,redirect,request
 from models import *
 
 @app.route("/admin",methods=["GET","POST"])
-def admin(id):
+def admin():
     return render_template("admin/base.html")
 #Admin Education
 @app.route("/admin/education",methods=["GET","POST"])
@@ -36,9 +36,25 @@ def education_delete(id):
     import os
     from run import db
     edu =   Education.query.filter_by(id=id).first()
-    db.session.delete(education)
+    db.session.delete(edu)
     db.session.commit()
     return redirect ("/admin/education")
+#Update Education
+@app.route("/educationEdit/<int:id>",methods=["GET","POST"])
+def education_edit(id):
+    from models import Education
+    from run import db
+    newEducation = Education.query.filter_by(id=id).first()
+    if request.method=="POST":
+        edu = Education.query.filter_by(id=id).first()
+        edu.education_date = request.form["time"]
+        edu. education_title = request.form["derece"]
+        edu.education_description = request.form["tehsilqurumu"]
+        edu.education_information = request.form["yer"]
+        
+        db.session.commit()
+        return redirect("/")
+    return render_template ("/admin/update_tehsil.html",newEducation=newEducation)
 # Admin Feedbacks
 @app.route("/admin/feedbacks",methods=["GET","POST"])
 def feedback():
@@ -77,7 +93,7 @@ def feedback_delete(id):
     db.session.commit()
     return redirect ("/admin/feedbacks")
 
-# Update
+# Update Feedback
 
 @app.route("/feedbackEdit/<int:id>",methods=["GET","POST"])
 def feedback_edit(id):
@@ -93,7 +109,7 @@ def feedback_edit(id):
         return redirect("/")
     return render_template ("/admin/update_feedbacks.html",newFeedback=newFeedback)
 
-
+#Portfolio admin
 @app.route('/admin/portfolio', methods=["GET","POST"])
 def portfolio():
     from models import Portfolio
