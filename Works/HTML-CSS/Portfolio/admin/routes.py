@@ -39,6 +39,22 @@ def experience_delete(id):
     db.session.delete(exp)
     db.session.commit()
     return redirect ("/admin/experience")
+#Update Experience
+@app.route("/experienceEdit/<int:id>",methods=["GET","POST"])
+def experience_edit(id):
+    from models import Experience
+    from run import db
+    newExperience = Experience.query.filter_by(id=id).first()
+    if request.method=="POST":
+        exp = Experience.query.filter_by(id=id).first()
+        exp.experience_date = request.form["time"]
+        exp.experience_title = request.form["isyeri"]
+        exp.experience_description = request.form["vezife"]
+        exp.experience_information = request.form["info"]
+        
+        db.session.commit()
+        return redirect("/")
+    return render_template ("/admin/update_tecrube.html",newExperience=newExperience)
 #Admin Education
 @app.route("/admin/education",methods=["GET","POST"])
 def education():
@@ -81,7 +97,7 @@ def education_edit(id):
     if request.method=="POST":
         edu = Education.query.filter_by(id=id).first()
         edu.education_date = request.form["time"]
-        edu. education_title = request.form["derece"]
+        edu.education_title = request.form["derece"]
         edu.education_description = request.form["tehsilqurumu"]
         edu.education_information = request.form["yer"]
         

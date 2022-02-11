@@ -1,0 +1,34 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Update Education</h2>
+    <div class="form-box">
+        <form action="/experienceEdit/{{newExperience.id}}" method="post" enctype="multipart/form-data"
+            for="exampleFormControlInput1" class="form-label">
+            <div class="baslamavebitmetarixi">
+                <label></label>
+                <input type="text" class="input" name="time" id="rey" value="{{newExperience.experience_date}}" required />
+            </div>
+            <div class="derece">
+                <label></label>
+                <input type="text" class="input" name="isyeri" id="isyeri"
+                    value="{{newExperience.experience_title}}" required />
+            </div>
+            <div class="isqurumu">
+                <label></label>
+                <input type="text" class="input" name="vezife" id="vezife"
+                    value="{{newExperience.experience_description}}"
+                    required />
+            </div>
+            <div class="info">
+                <label></label>
+                <input type="text" class="input" name="info" id="info" value="{{newExperience.experience_information}}"
+                    required />
+            </div>
+            <div class="submit">
+                <label></label>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
