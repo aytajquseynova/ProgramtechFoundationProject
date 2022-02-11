@@ -1,0 +1,48 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+  <h2>Mənim işlərim</h2>
+  <div class="form-box">
+    <form action="/admin/portfolio" method="post" enctype="multipart/form-data" for="exampleFormControlInput1"
+      class="form-label">
+
+      <div class="cmntrname">
+        <label> </label>
+
+        <input type="text" class="input" name="portfolio_title" id="cmntrname" placeholder="Layihənin adı" required />
+      </div>
+
+      <div class="img">
+        <label> </label>
+        <input type="file" class="input" name="img" id="img" placeholder="Rəy yazanın şəkli" required />
+      </div>
+      <div class="submit">
+        <label> </label>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div class="pl-60 mt-5">
+      <table class="table rounded text-light">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Basligi</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%for portfolio in portfolios%}
+          <tr>
+            <td>{{portfolio.id}}</td>
+            <td>{{portfolio.portfolio_title}}</td>
+            <td><a href="/portfolioEdit/{{portfolio.id}}"><i class="far fa-edit" style="color: #adaefc;"></i></a></td> 
+            <td><a href="/portfolioDelete/{{portfolio.id}}"> <i class="far fa-trash-alt" style="color: #adaefc;"></i></a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

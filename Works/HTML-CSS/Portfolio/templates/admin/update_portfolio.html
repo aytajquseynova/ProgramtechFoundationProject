@@ -1,0 +1,19 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Update Portfolio</h2>
+    <div class="form-box">
+        <form action="/portfolioEdit/{{newPortfolio.id}}" method="post" enctype="multipart/form-data"
+            for="exampleFormControlInput1" class="form-label">
+            <div class="rey">
+                <label></label>
+                <input type="text" class="input" name="portfolio_title" id="rey" value="{{newPortfolio.portfolio_title}}" required />
+            </div>
+
+            <div class="submit">
+                <label></label>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

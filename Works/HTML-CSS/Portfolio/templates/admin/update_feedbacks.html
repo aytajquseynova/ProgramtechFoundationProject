@@ -1,0 +1,28 @@
+{% extends "admin/base.html" %} {% block content %}
+<section id="form">
+    <h2>Update Feedback</h2>
+    <div class="form-box">
+        <form action="/feedbackEdit/{{newFeedback.id}}" method="post" enctype="multipart/form-data"
+            for="exampleFormControlInput1" class="form-label">
+            <div class="rey">
+                <label></label>
+                <input type="text" class="input" name="rey" id="rey" value="{{newFeedback.feedback_rey}}" required />
+            </div>
+            <div class="cmntrname">
+                <label></label>
+                <input type="text" class="input" name="cmntrname" id="cmntrname"
+                    value="{{newFeedback.feedback_cmntrname}}" required />
+            </div>
+            <div class="cmntrjob">
+                <label></label>
+                <input type="text" class="input" name="cmntrjob" id="cmntrjob" value="{{newFeedback.feedback_cmntrjob}}"
+                    required />
+            </div>
+            <div class="submit">
+                <label></label>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

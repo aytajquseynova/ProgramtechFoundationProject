@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,11 +49,16 @@
                     <div class="section-about">
                         <h2 class="Mənim haqqımda">Haqqımda</h2>
                         <hr>
-                        {%for about in about %}
-                        <p>{{about.name}}</p>
-                        <p> {{about.shortInfo}} </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat nec tortor a eleifend.
+                            Proin nec ligula vel sem luctus porttitor. Cras at interdum libero. Donec nec mauris velit.
+                        </p>
+                        <p> Vestibulum eu eros tortor. Aliquam cursus nunc mauris, nec congue tortor pretium et.
+                            Pellentesque feugiat justo in metus laoreet consectetur. Mauris at tempor ipsum, sit amet
+                            etae posuere. Nunc auctor sollicitudin sem ut molestie. Pellentesque ligula sapien,
+                            ullamcorper et tempor id, congue ac sapien. </p>
                         <br>
-                        {%endfor%}
+
                     </div>
                 </section>
                 <!--about sectionu bitir-->
@@ -62,9 +68,11 @@
                         <h2>Şəxsi bacarıqlar</h2>
                         <hr>
                         <div class="skill-icons">
-                            {%for skill in skill %}
-                            <i class="{{skill.icon}}"></i>
-                            {%endfor%}
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fa-brands fa-github"></i>
                         </div>
                     </div>
                 </section>
@@ -90,14 +98,14 @@
                         <h2>EDUCATION & DIPLOMAS</h2>
                         <hr>
                         <div class="education-items">
-                            {%for education in education%}
+                            {%for edu in education%}
                             <div class="education-line">
-                                <h3>{{education.time}}</h3>
+                                <h3>{{edu.education_date}}</h3>
                             </div>
-                            <h3>{{education.place}}</h3>
-                            <p class="education-location">{{education.job}}</p>
+                            <h3>{{edu.education_title}}</h3>
+                            <p class="education-location">{{edu.education_description}}</p>
                             <p class="education-about">
-                                {{education.shortInfo}}</p>
+                                {{edu.education_information}}</p>
                             {%endfor%}
                         </div>
                     </div>
@@ -116,13 +124,13 @@
                         </div>
                         <div class="img-frame">
                             <div class="img-video">
-                                {% for prt in portfolio %}
+                                {% for prt in portfolios %}
                                 <div class="img-items">
                                     <div class="test">
-                                        <i class="{{prt.icon}}"></i>
-                                        <p>{{prt.projectname}}</p>
+
+                                        <p>{{prt.portfolio_title}}</p>
                                     </div>
-                                    <img src="{{prt.img}}" alt="">
+                                    <img src="/static/uploads/{{prt.portfolio_img}}" alt="">
                                 </div>
                                 {% endfor %}
                             </div>
@@ -141,17 +149,17 @@
                         </div>
                     </div>
                     <div class="comment-frame">
-                        {%for cmnt in feed %}
+                        {%for feedback in feedbacks %}
                         <div class="comment">
-                            <div class="rey"><q>{{cmnt.feedback_rey}}
+                            <div class="rey"><q>{{feedback.feedback_rey}}
                                 </q></div>
                             <div class="commenter-bio">
                                 <div class="commenter-info">
-                                    <img src="{{cmnt.feedback_img}}">
+                                    <img src="/static/uploads/{{feedback.feedback_img}}">
                                     <div class="commenter-details">
                                         <div class="commenter-name">
-                                            <p class="reyci-adi">{{cmnt.feedback_cmntrname}}</p>
-                                            <p class="reyci-isi">{{cmnt.feedback_cmntrjob}}</p>
+                                            <p class="reyci-adi">{{feedback.feedback_cmntrname}}</p>
+                                            <p class="reyci-isi">{{feedback.feedback_cmntrjob}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +193,7 @@
                     <div class="form-box">
                         <form>
                             <p>Drop me a line</p>
-                          
+
                             <div class="name">
                                 <label> </label>
                                 <input type="text" class="input" name="name" id="name" placeholder="Enter name"
@@ -199,15 +207,15 @@
                             <div class="subject">
                                 <label> </label>
 
-                                <input type="text" class="input" name="subject" id="subject"
-                                    placeholder="Enter subject" required>
+                                <input type="text" class="input" name="subject" id="subject" placeholder="Enter subject"
+                                    required>
                             </div>
                             <div class="entermessage">
                                 <label> </label>
                                 <!--<textarea class="minimal" name="message" id="message" placeholder="Enter message"
                                     required></textarea></div>-->
-                                <input type="text" class="input" name="message" id="message"
-                                    placeholder="Enter message" required>
+                                <input type="text" class="input" name="message" id="message" placeholder="Enter message"
+                                    required>
                                 <div class="submit"><label> </label>
                                     <!-- <input type="button" class="submit" value="Submit"> -->
                                     <button type="submit">Submit</button>
