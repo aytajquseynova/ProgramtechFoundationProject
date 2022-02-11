@@ -6,6 +6,39 @@ from models import *
 @app.route("/admin",methods=["GET","POST"])
 def admin():
     return render_template("admin/base.html")
+#Admin Experience
+@app.route("/admin/experience",methods=["GET","POST"])
+def experience():
+    from models import Experience
+    import os
+    from run import db
+    from werkzeug.utils import secure_filename
+    experience = Experience.query.all()
+    if request.method=="POST":
+        experience_date = request.form["time"]
+        experience_description=request.form["isyeri"]
+        experience_title=request.form["vezife"]
+        experience_information=request.form["info"]
+        tecrube = Experience(
+           experience_date=experience_date,
+           experience_description=experience_description,
+           experience_title=experience_title,
+           experience_information=experience_information
+           )
+        db.session.add(tecrube)
+        db.session.commit()
+        return redirect("/")
+    return render_template('admin/tecrube.html',experience=experience)
+#Delete Experience
+@app.route("/experienceDelete/<int:id>",methods=["GET","POST"])
+def experience_delete(id):
+    from models import Experience
+    import os
+    from run import db
+    exp =   Experience.query.filter_by(id=id).first()
+    db.session.delete(exp)
+    db.session.commit()
+    return redirect ("/admin/experience")
 #Admin Education
 @app.route("/admin/education",methods=["GET","POST"])
 def education():

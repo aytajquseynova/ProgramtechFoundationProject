@@ -81,14 +81,14 @@
                         <h2>WORK EXPERIENCE</h2>
                         <hr>
                         <div class="work-items">
-                            {%for work in work%}
+                            {%for exp in experience%}
                             <div class="work-line">
-                                <h3>{{work.time}}</h3>
+                                <h3>{{exp.experience_date}}</h3>
                             </div>
-                            <h3>{{work.place}}</h3>
-                            <p class="job-location">{{work.job}}</p>
+                            <h3>{{exp.experience_title}}</h3>
+                            <p class="job-location">{{exp.experience_description}}</p>
                             <p class="work-about">
-                                {{work.shortInfo}}</p>
+                                {{exp.experience_information}}</p>
                             {%endfor%}
                         </div>
                     </div>
