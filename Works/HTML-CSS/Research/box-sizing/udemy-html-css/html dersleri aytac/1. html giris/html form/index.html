@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form elemanlari</title>
+</head>
+<body style="background:bisque ;">
+    <!--htmlde form olusturmak icin <form></ form> -->
+    <form action="bilgi.html">
+        <!--fieldset legend yapisi
+        -->
+       <fieldset style="border:10px solid midnightblue;">
+           <!--legend kismi fieldsetin baslik kismi-->
+           <legend style="font-weight: bold;">
+               form input elemanlari
+           </legend>
+           <!--tablo olusturuldu 7 satir 2 sutun-->
+           <table>
+               <tr>
+                   <td>adi</td>
+                   <td><input type="text" name="adi"></td>
+<!--eger kullanicinin text turunde ifadeisini girmek istiyorsak input text kullanilir -->
+               </tr>
+               <tr>
+                   <td>soyadi</td>
+                   <td><input type="text" name="soyadi"></td>
+                   <!--input type olarak text turu kullanildi-->
+               </tr>
+               <tr>
+                   <td>email</td>
+                   <td><input type="email" name="email"></td>
+                   <!--kullanicida mail turunde ifade girmesi icin inputda tur olarak email kullandik-->
+               </tr>
+               <tr>
+                   <td>sifre</td>
+                   <td><input type="password">sifre</td>
+                   <!--kullanicinin girdigi sifreyi sifre olarak gostermek icin input password turunu kullandik-->
+               </tr>
+               <tr>
+                   <td>cinsiyyet</td>
+                   <td>
+                       <input type="radio" name="cinsiyyet" value="erkek"> erkek
+                       <input type="radio" name="cinsiyyet" value="kadin">kadin
+                   </td>
+                   <!--cinsiyetde 2 secim sunduk birini secmek istiyorsak radio turu kullaniliyor
+                radio turunde name ozellikleri ayni olmasi gerekiyor value ile-->
+               </tr>
+               <tr>
+                   <td>hobiler</td>
+                   <td>
+                       <input type="checkbox" name="kitap" value="kitap">kitap okumak
+                       <input type="checkbox" name="muzik" value="muzik"> muzik dinlemek
+                       <input type="checkbox" name="film" value="film">film izlemek
+                   </td>
+                   <!--kullanicinin birden fazla secim sece bilmesi icin inputa checkbox turu kullaniyoz-->
+               </tr>
+               <tr>
+                   <td>
+                       <input type="submit" value="gonder">
+                       <!-- formsubmit calismasi icin
+                    submit edilmesi form doldurulduktan sonra formun baska sayfaya iletilmesini saglar-->
+                       <input type="button" value="duzenle">
+                       <!--buton olusturmak icin button turu kullanilir-->  
+                   </td>
+               </tr>
+           </table>
+       </fieldset>
+       <hr>
+       <fieldset style="border: 10px solid ; color: violet;">
+           <legend style="font-weight: bold;">diger form elemanlari</legend>
+           <table cellpadding="10px" cellspacing="10px">
+               <tr>
+                   <td>programlama</td>
+                   <td><select>
+                       <option>javascript</option>
+                       <option>html</option>
+                       <option>css</option>
+                   </select></td>
+               </tr>
+               <tr>
+                   <td>data list kullanimi</td>
+                   <td>
+                       <input list="browser">
+                       <datalist id="browser">
+                           <option value="firefox"></option>
+                           <option value="chrome"></option>
+                           <option value="opera"></option>
+                           <option value="safari"></option>
+                       </datalist>
+                   </td>
+               </tr>
+               <tr>
+                   <td>adres</td>
+                   <td>
+                       <textarea name="adres" rows="10" cols="30"></textarea>
+                   </td>
+               </tr>
+           </table>
+       </fieldset>
+    </form>
+</body>
+</html>
