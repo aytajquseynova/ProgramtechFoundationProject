@@ -399,7 +399,6 @@ hr {
   -ms-transition: .6s ease all;
   -o-transition: .6s ease all;
   cursor: pointer;
-
 }
 
 .test:hover {
@@ -461,8 +460,9 @@ hr {
 }
 
 .comment-frame {
-  display: flex;
-  flex-direction: row;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap:30px;
 }
 
 q {
